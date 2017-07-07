@@ -514,3 +514,7 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
+
+#email{
+	text-transform:lowercase;
+}
