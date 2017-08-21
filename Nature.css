@@ -1,0 +1,52 @@
+body {
+	background: url('https://images.pexels.com/photos/223022/pexels-photo-223022.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat;
+	background-size:cover;
+	font-family:Arial;
+	
+}
+
+#logo {
+	display:inline-block;
+	font-size:25px;
+	width:250px;
+	height:80px;
+	letter-spacing: 10px;
+	line-height:40px;
+	color:white;
+	font-weight:800;
+}
+
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display:inline-block;
+}
+
+ul li {
+	float:left;
+	width:200px;
+	height:40px;
+	background-color: black;
+	color:white;
+	opacity:0.8;
+	line-height:40px;
+	text-align:center;
+	font-size:20px;
+	margin-right:2px;
+}
+
+ul li a {
+	text-decoration:none;
+	display:block;
+}
+ul li:hover {
+	background-color:green;
+}
+ul li ul li {
+	display:none;
+}
+ul li:hover ul li {
+	display:block;
+}
