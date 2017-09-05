@@ -24,6 +24,7 @@
 		font-size: 45px;
 		font-weight: 900;
 		text-shadow: 2px 2px #000;
+		margin-top: 100px;
 	}
 
 	#showcase p {
@@ -40,8 +41,81 @@
 		padding: 10px 20px;
 		border-radius:10px;
 		margin-top: 120px;
+		transition: all 0.5s;
 	}
 	#showcase .button:hover{
 		background: white;
 		color:#926239;
 	}
+
+
+	#section-a {
+		padding:20px;
+		background:#926239;
+		color:#fff;
+		text-align:center;
+	}
+
+	#section-b {
+		padding:20px;
+		background:#f4f4f4;
+		color:#926329;
+		text-align:center;
+	}
+
+	#section-c {
+		text-align:center;
+		background:white;
+		color:#926329;
+		padding: 15px;
+	}
+	.info {
+		text-align:center;
+		text-decoration: underline;
+		font-size:22px;
+
+	}
+	
+
+	h1 {
+		animation-delay: 1s;
+	}
+
+	p{
+		animation-delay:2s;
+	}
+	
+
+/*----Media Queries----*/
+@media screen and (max-width:900px) {
+	#showcase {
+		padding-bottom: 20%;
+	}
+	h1 {
+		font-size: 200%;
+		margin-top: 70%;
+	}
+
+	p {
+		margin-top: 70%;
+	}
+
+	.button {
+		margin-bottom: 80%;
+	}
+@media screen and (max-width:768px) {
+	#showcase {
+		padding-bottom: 30%;
+	}
+
+}
+
+@media screen and (max-width:480px) {
+	p {
+		margin-top: 80%;
+	}
+
+	.button {
+		margin-bottom: 60%;
+}	
+}
