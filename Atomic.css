@@ -12,6 +12,13 @@ body {
 	margin:auto;
 	overflow:hidden;
 }
+.dark {
+	padding:15px;
+	background:#35424a;
+	color: white;
+	margin-top:10px;
+	margin-bottom:10px;
+}
 
 /* header */
 
@@ -71,7 +78,7 @@ header a:hover {
 	text-align:center;
 	color:#e8491d;
 	font-weight:800;
-	opacity: 0.8;
+	
 }
 
 #text {
@@ -133,6 +140,28 @@ header a:hover {
 #boxes .box img {
 	width: 90px;
 }
+/*sidebar */
+	#sidebar {
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+/*main-col*/
+#main-col {
+	float:left;
+	width:65%;
+}
+
+/*Services*/
+ul#services li {
+	list-style:none;
+	padding:20px;
+	border: #cccccc solid 1px;
+	margin-bottom:5px;
+	background:#e6e6e6;
+}
+
 footer {
 	padding:20px;
 	margin-top:20px;
