@@ -54,6 +54,11 @@ body {
 .insider {
 	max-width:490px;
 }
+#released {
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom:20px;
+}
 
 .model {
 	height:100%;
@@ -163,4 +168,82 @@ p {
 .price {
 	font-size: 24px;
 	margin-right:10px;
+}
+
+.clearfix {
+	clear:both;
+}
+
+#latest {
+	color:red;
+	text-transform:uppercase;
+	border-bottom: 2px solid #F1F1F1;
+	padding-bottom:10px;
+	width:31%;
+	margin-top:3%;
+	margin-left:1%;
+}
+
+.items img {
+	width:31%;
+	float:left;
+	margin:1%;
+}
+
+footer {
+	background: #959595;
+	width:100%;
+	height:200px;
+	overflow:hidden;
+	opacity: 0.9;
+}
+#footer-inner {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#footer-info {
+	float:left;
+	width: 55%;
+	margin: 2% 0;
+}
+footer h3 {
+	color: #F1F1F1;
+	text-align:center;
+}
+
+footer p {
+	color: #F1F1F1;
+	text-align:center;
+}
+#footer-social {
+	float:left;
+	width:40%;
+	border-left: 1px solid #F1F1F1;
+	max-height: 200px;
+	min-height: 200px;
+	
+}
+footer a {
+	color: #F1F1F1;
+	text-decoration:none;
+}
+.social li {
+	display:inline;
+}
+.social i {
+	font-size: 245%;
+	padding: 2% 6%;
+	color: #F1F1F1;
+}
+.social i:hover {
+	color: #F1F1F1;
+}
+h5 a:hover {
+	text-decoration:none;
+	color: #405580;
+}
+footer.second {
+	border-top: 1px solid #F1F1F1;
+	max-height: 30px;
+	opacity:.95;
 }
