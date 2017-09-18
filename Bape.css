@@ -264,7 +264,7 @@ p {
 
 }
 
-.banner-btn {
+.banner-btn1 {
 	display:inline-block;
 	background-color:white;
 	color:black;
@@ -500,3 +500,4 @@ footer.second {
 	max-height: 30px;
 	opacity:.95;
 }
+
