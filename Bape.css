@@ -18,6 +18,8 @@ body {
 
 #header {
 	padding:40px 0;
+	border-bottom:2px solid red;
+	padding-bottom:10px;
 }
 
 .logo {
@@ -160,9 +162,10 @@ p {
   	text-transform:uppercase;
   	font-size:10px;
   	letter-spacing: 1px;
-  	min-height: 30px;
+  	min-height: 10px;
   	position:relative;
-  	top: -5px;
+  	top: -72px;
+  	left:300px;
   	min-width: 49%;
 
 }
@@ -272,7 +275,7 @@ p {
 	padding:10px;
 }
 
-.banner-btn:hover {
+.banner-btn1:hover {
 	background-color:black;
 	color:white;
 }
@@ -281,7 +284,7 @@ p {
 
 .essentials p {
 	position:absolute;
-	top:500px;
+	top:200px;
 	left: 100px;
 	display:inline-block;
 	width:150px;
@@ -290,11 +293,12 @@ p {
 	background-color:red;
 	font-weight:200;
 	font-size:26px;
+	opacity:0.8;
 }
 
 .essentials #sale2 {
 	position:absolute;
-	top:500px;
+	top:200px;
 	left: 500px;
 	display:inline-block;
 	width:150px;
@@ -307,7 +311,7 @@ p {
 
 .essentials #sale3 {
 	position:absolute;
-	top:500px;
+	top:200px;
 	left: 1000px;
 	display:inline-block;
 	width:150px;
@@ -320,7 +324,7 @@ p {
 
 .essentials #sale4 {
 	position:absolute;
-	top:1100px;
+	top:800px;
 	left: 100px;
 	display:inline-block;
 	width:150px;
@@ -333,7 +337,7 @@ p {
 
 .essentials #sale5 {
 	position:absolute;
-	top:1100px;
+	top:800px;
 	left: 500px;
 	display:inline-block;
 	width:150px;
@@ -346,7 +350,7 @@ p {
 
 .essentials #sale6 {
 	position:absolute;
-	top:1100px;
+	top:800px;
 	left: 1000px;
 	display:inline-block;
 	width:150px;
@@ -360,83 +364,84 @@ p {
 
 .essentials span {
 	position:absolute;
-	top:640px;
+	top:570px;
 	left: 100px;
 	text-decoration:line-through;
+	font-weight:bold;
 
 }
 
 .essentials #price2 {
 	position:absolute;
-	top:640px;
+	top:570px;
 	left: 500px;
 	text-decoration:line-through;
 }
 
 .essentials #price3 {
 	position:absolute;
-	top:640px;
+	top:570px;
 	left: 900px;
 	text-decoration:line-through;
 }
 
 .essentials #price4 {
 	position:absolute;
-	top:1300px;
+	top:1160px;
 	left: 100px;
 	text-decoration:line-through;
 }
 
 .essentials #price5 {
 	position:absolute;
-	top:1300px;
+	top:1160px;
 	left: 500px;
 	text-decoration:line-through;
 }
 
 .essentials #price6 {
 	position:absolute;
-	top:1300px;
+	top:1160px;
 	left: 900px;
 	text-decoration:line-through;
 }
 
 .essentials #new {
 	position:absolute;
-	top:640px;
+	top:570px;
 	left: 140px;
 	text-decoration:none;
 }
 .essentials #new2 {
 	position:absolute;
-	top:640px;
+	top:570px;
 	left: 540px;
 	text-decoration:none;
 }
 
 .essentials #new3 {
 	position:absolute;
-	top:640px;
+	top:570px;
 	left: 940px;
 	text-decoration:none;
 }
 
 .essentials #new4 {
 	position:absolute;
-	top:1300px;
+	top:1160px;
 	left: 140px;
 	text-decoration:none;
 }
 
 .essentials #new5 {
 	position:absolute;
-	top:1300px;
+	top:1160px;
 	left: 540px;
 	text-decoration:none;
 }
 .essentials #new6 {
 	position:absolute;
-	top:1300px;
+	top:1160px;
 	left: 940px;
 	text-decoration:none;
 
@@ -451,7 +456,7 @@ footer {
 	opacity: 0.9;
 }
 #footer-inner {
-	max-width: 500px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 #footer-info {
@@ -497,7 +502,6 @@ h5 a:hover {
 }
 footer.second {
 	border-top: 1px solid #F1F1F1;
-	max-height: 30px;
+	max-height: 40px;
 	opacity:.95;
 }
-
