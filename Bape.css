@@ -10,6 +10,7 @@ import url(http://fonts.googleapis.com/css?family=Roboto);
 body {
 	font-family: 'Roboto', sans-serif;
 
+
 }
 .container {
 	max-width:90%;
@@ -221,7 +222,7 @@ p {
 	top:300px;
 	left: 200px;
 	color:white;
-	font-weight:200;
+	font-weight:600;
 	font-size:26px;
 	
 }
@@ -231,16 +232,16 @@ p {
 	top:300px;
 	left:600px;
 	color:white;
-	font-weight:200;
+	font-weight:600;
 	font-size:26px;
 }
 
 .essentials h4 {
 	position:absolute;
 	top:300px;
-	left:1100px;
+	left:1000px;
 	color:white;
-	font-weight:200;
+	font-weight:600;
 	font-size:26px;
 }
 
@@ -281,6 +282,10 @@ p {
 }
 
 /* Sales */
+
+.essentials img {
+	margin-bottom:25px;
+}
 
 .essentials p {
 	position:absolute;
@@ -368,6 +373,7 @@ p {
 	left: 100px;
 	text-decoration:line-through;
 	font-weight:bold;
+	margin-top:7px;
 
 }
 
@@ -446,6 +452,78 @@ p {
 	text-decoration:none;
 
 }
+
+/* Shop */
+ .join {
+ 	background:#e6e6e6;
+ 	border: #cccccc solid 1px;
+ 	padding:2px 4px 0px 15px;
+ 	margin-top: 40px;
+ 	width:700px;
+ }
+ #free {
+ 	color:red;
+ 	font-size:18px;
+ 	text-transform:uppercase;
+ 	font-weight:bold;
+ }
+
+#cart {
+	font-size:18px;
+	font-weight:bold;
+}
+
+#no-items {
+	border: #cccccc solid 1px;
+	padding:20px;
+	font-weight:bold;
+	font-size:13px;
+	margin-bottom:100px;
+	
+}
+
+#container {
+	float:left;
+	width:60%;
+}
+
+#sidebar {
+	float:right;
+	width:35%;
+	
+}
+
+.dark {
+	background-color:#191919;
+	letter-spacing:0.25em;
+	font-size:14px;
+	color:#efefef;
+	margin-bottom:60px;
+	border-radius:3px;
+
+}
+.dark h3 {
+	border-bottom:#000 1px solid;
+	padding:20px;
+	
+}
+
+.dark h4 {
+	border-bottom: #000 1px solid;
+	padding:20px;
+	border-radius:2px;
+}
+
+#button1 {
+	padding:20px;
+	margin-left:60px;
+	margin-bottom:10px;
+	display:inline-block;
+	width:260px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
 /* Footer */
 
 footer {

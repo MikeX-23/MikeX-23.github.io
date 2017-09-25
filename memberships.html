@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+<title>Evolution Gym Animated</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Evolution-Gym-Animation.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+$(document).ready(function(){
+
+	var width = 1100;
+    var animationSpeed = 1300;
+    var pause = 4000;
+    var currentSlide = 1;
+
+    
+    var $slider = $('#slider');
+    var $slideContainer = $('.slides', $slider);
+    var $slides = $('.slide', $slider);
+
+    var interval;
+
+    function startSlider() {
+        interval = setInterval(function() {
+            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+                if (++currentSlide === $slides.length) {
+                    currentSlide = 1;
+                    $slideContainer.css('margin-left', 0);
+                }
+            });
+        }, pause);
+    }
+    function pauseSlider() {
+        clearInterval(interval);
+    }
+
+    $slideContainer
+        .on('mouseenter', pauseSlider)
+        .on('mouseleave', startSlider);
+
+    startSlider();
+
+});
+</script>
+</head>
+<body>
+	<header>
+		<div id="header-inner">
+			<a href="#" id="logo">Evolution Gym</a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="Evolution-Gym-Animation.html">Home</a></li>
+				<li><a href="memberships.html" class="current">Memberships</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+		<div id="fit">
+			<div id="fit-content">
+				<h5>GYM MEMBERSHIPS</h5>
+				<h2>Getting fit is <br>easy with Evolution Gym</h2>
+				<p>A gym membership at Evolution Gym gives you access to<br> our amazing services, amenities, and trainers that will help you<br> achieve your personal goals. We have over 150 gym locations<br> with 24/7 access, which allows you to workout whenever you want.</p>
+				<div id="form-wrapper">
+				<h3>Get a <span id="underline">FREE</span> 4 Visit Pass</h3>
+				<form id="form1"> 
+				<input type="email" placeholder="Enter Your Email">
+				<button type="submit" id="button1"> Start Now</button>
+				</form>
+				</div>
+			</div>
+		</div>
+		<div>
+		<div id="options">
+			<h1>Membership Options</h1>
+			<p>Please select your province.</p>
+			<form>
+				<select name="provinces">
+					<option>Choose Your Province</option>
+	    			<option>Alberta</option>
+	    			<option>British Columbia</option>
+	    			<option>Manitoba</option>
+	    			<option>Alberta</option>
+	    			<option>British Columbia</option>
+	    			<option>New Brunswick</option>
+	    			<option>Newfoundland</option>
+	    			<option>Novia Scotia</option>
+	    			<option>Ontario</option>
+	    			<option>Prince Edward Island</option>
+	    			<option>Saskatchewan</option>
+    			</select>
+			</form>
+			</div>
+		</div>
+	
+	<footer>
+		<div id="footer-inner">
+		<section class="one-third" id="footer-third">
+			<h3>Contact</h3>
+			<p class="footer-contact">Evolution Gym<br>
+			<b class="phone">555-525-5005</b><br><br>
+			500 Washington Road<br>
+			Seattle, WA
+			</p>
+		</section>
+		<section class="one-third" id="footer-third">
+			<h3>Social</h3>
+			<br>
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+		</section>
+	
+		<section class="one-third" id="footer-third-last">
+		<h3>Pages</h3>
+		<br>
+		<h5>
+			<a href="#">Home</a> -
+			<a href="#">About</a>
+			<a href="#">Facility</a> -
+			<a href="#">Pricing</a> -
+			<a href="#">Contact</a>
+		</h5>
+		</section>
+		</div>
+	</footer>
+	<footer class="second">
+		<p>&copy; Evolution Gym, 2017</p>
+	</footer>
+
+</div>
+</body>
+<script type="text/javascript">
+AOS.init();
+
+</script>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+<title>Evolution Gym Animated</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="Evolution-Gym-Animation.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>
+$(document).ready(function(){
+
+	var width = 1100;
+    var animationSpeed = 1300;
+    var pause = 4000;
+    var currentSlide = 1;
+
+    
+    var $slider = $('#slider');
+    var $slideContainer = $('.slides', $slider);
+    var $slides = $('.slide', $slider);
+
+    var interval;
+
+    function startSlider() {
+        interval = setInterval(function() {
+            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+                if (++currentSlide === $slides.length) {
+                    currentSlide = 1;
+                    $slideContainer.css('margin-left', 0);
+                }
+            });
+        }, pause);
+    }
+    function pauseSlider() {
+        clearInterval(interval);
+    }
+
+    $slideContainer
+        .on('mouseenter', pauseSlider)
+        .on('mouseleave', startSlider);
+
+    startSlider();
+
+});
+</script>
+</head>
+<body>
+	<header>
+		<div id="header-inner">
+			<a href="#" id="logo">Evolution Gym</a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="#" class="current">Home</a></li>
+				<li><a href="memberships.html">Memberships</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+		<section id="slider">
+			<ul class="slides">
+				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/inside-gym.png"/></li>
+				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/push-ups.png"/></li>
+				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/chest-fly.png"/></li>
+				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/training.png"/></li>
+			</ul>
+		</section>
+		<div class="clearfix"></div>
+		<div id="inner-wrapper">
+	<section class="one-third">
+		<div data-aos="slide-right" data-aos-offset=360>
+		<div class="circle">
+			<td><i class="fa fa-users"></i></td>
+		</div>
+		<h3>Grade A Staff</h3>
+		<p>We have the best training staff in the tri-state area as we seek out and recruit talented trainers with all the right certifications. Come in today and have a sit down with one of our trainers so we can help you meet your goals in the fastest way possible!</p>
+		</div>
+	</section>
+	<section class="one-third">
+		<div data-aos="slide-up" data-aos-offset=360>
+		<div class="circle" >
+			<td><i class="fa fa-map-marker"></i></td>
+		</div>
+		<h3>A Convenient Location</h3>
+		<p>Our location sits near the center of four major roadway exits making it very convenient for gym goers and personal training clients to get their workouts in before or after work, even on a short lunch break!</p>
+	</section>
+	</div>
+	<section class="one-third">
+		<div data-aos="slide-left">
+		<div class="circle">
+			<td><i class="fa fa-check-square-o"></i></td>
+		</div>
+		<h3>Check Us Out - Free</h3>
+		<p>To show how confident we are in our facilities and their satisfying the needs of our clients, we offer a free two week pass so anyone interested can first get a feel for our gym and decide whether or not they'd like to join. Call or come in today for your free pass!</p>
+	</section>
+	<div class="clearfix"></div>
+	<article>
+		<div data-aos="fade-right" data-aos-offset=360>
+		<img src="https://www.w3newbie.com/wp-content/uploads/gym-classes.png" class="circle-image"/></div>
+	</article>
+	<aside>
+		<div data-aos="fade-left" data-aos-offset=360>
+		<h3>Our Facility</h3>
+			<ul class="gym">
+				<li><h4>Unlimited Wifi Connection</h4></li>
+				<li><h4>Member Music Request and Voting</h4></li>
+				<li><h4>Open 24 hours/ 7 days a week</h4></li>
+				<li><h4>Cardio Machine Theater</h4></li>
+			</ul>
+		</div>
+	</aside>
+	<div class="clearfix"></div>
+
+	<section class="one-third">
+	<div data-aos="flip-right" data-aos-offset=360>
+		<h3>Ladies Section</h3>
+		<img src="https:///www.w3newbie.com/wp-content/uploads/ladies-gym.jpg"/>
+		<p>Included in our facility is a "ladies only" section of the gym where women can workout to themselves.</p>
+		</div>
+	</section>
+	<section class="one-third">
+		<div data-aos="flip-up" data-aos-offset=360>
+		<h3>The Gym Floor</h3>
+		<img src="https:///www.w3newbie.com/wp-content/uploads/gym-floor.jpg"/>
+		<p>Our gym floor is as spacious as they come. Enjoy scenic views from the cardio equipment on the third floor</p>
+		</div>
+	</section>
+	<section class="one-third">
+		<div data-aos="flip-left" data-aos-offset=360>
+		<h3>Free Weights</h3>
+		<img src="https:///www.w3newbie.com/wp-content/uploads/free-weights.jpg"/>
+		<p>Our free weights section has an extensive collection of dumbbells and Olympic plates for body building.</p>
+	</section>
+	<div class="clearfix"></div>
+	
+	<footer>
+		<div id="footer-inner">
+		<section class="one-third" id="footer-third">
+			<h3>Contact</h3>
+			<p class="footer-contact">Evolution Gym<br>
+			<b class="phone">555-525-5005</b><br><br>
+			500 Washington Road<br>
+			Seattle, WA
+			</p>
+		</section>
+		<section class="one-third" id="footer-third">
+			<h3>Social</h3>
+			<br>
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				</ul>
+		</section>
+	
+		<section class="one-third" id="footer-third-last">
+		<h3>Pages</h3>
+		<br>
+		<h5>
+			<a href="#">Home</a> -
+			<a href="#">About</a>
+			<a href="#">Facility</a> -
+			<a href="#">Pricing</a> -
+			<a href="#">Contact</a>
+		</h5>
+		</section>
+		</div>
+	</footer>
+	<footer class="second">
+		<p>&copy; Evolution Gym, 2017</p>
+	</footer>
+
+</div>
+</body>
+<script type="text/javascript">
+AOS.init();
+
+</script>
+</html>
