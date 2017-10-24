@@ -86,36 +86,3 @@
 	}
 	
 
-/*----Media Queries----*/
-@media screen and (max-width:900px) {
-	#showcase {
-		padding-bottom: 20%;
-	}
-	h1 {
-		font-size: 200%;
-		margin-top: 70%;
-	}
-
-	p {
-		margin-top: 70%;
-	}
-
-	.button {
-		margin-bottom: 80%;
-	}
-@media screen and (max-width:768px) {
-	#showcase {
-		padding-bottom: 30%;
-	}
-
-}
-
-@media screen and (max-width:480px) {
-	p {
-		margin-top: 80%;
-	}
-
-	.button {
-		margin-bottom: 60%;
-}	
-}
