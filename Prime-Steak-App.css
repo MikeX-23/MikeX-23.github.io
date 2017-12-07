@@ -1,0 +1,584 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans:400,700|Rozha+One');
+
+* {
+	padding:0;
+	margin:0;
+	border:0;
+}
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	width:100%;
+	height:100vh;
+	overflow-x:hidden;
+}
+
+header {
+	position:absolute;
+	width:100%;
+	color:white;
+	padding:20px;
+	z-index:20;
+}
+
+
+
+.logo {
+	display:inline-block;
+	position:absolute;
+
+	/*padding:20px 10px;*/
+}
+
+img {
+	height:200px;
+	position:relative;
+	top:-30px;
+	left:-160px;
+
+}
+
+nav {
+	display:inline-block;
+	float:right;
+	text-align:right;
+	padding-right:200px;
+	margin-top:40px;
+}
+
+nav a {
+	font-size:1.3rem;
+	display:inline-block;
+	color:white;
+	text-decoration:none;
+	padding:0px 10px;
+	transition: all 0.5s ease-in-out;
+
+}
+
+nav a:hover {
+	color:red;
+}
+
+#TopImg {
+	position:relative;
+	background:black;
+	min-height:500px;
+	height:100vh;
+	background:linear-gradient(135deg,rgba(0,0,0,0.1) 0, #002d77 100%);
+	background-image: linear-gradient(135deg,rgba(0,0,0,0.1) 0, #000 100%), url("https://www.kitchencraftcookware.com/wp-content/uploads/2014/11/kitchen-craft-beef-roast.jpg");
+	background-position:center;
+	background-size:cover;
+	padding-right:200px;
+}
+
+.title {
+	padding:200px 0 50px;
+	text-align:right;
+}
+
+h1 {
+	font-family:'Rozha One', serif;;
+	text-transform:uppercase;
+	color:white;
+	font-weight:300;
+	font-size:4rem;
+}
+
+h5 {
+	font-size:1.2rem;
+	text-transform:uppercase;
+	color:white;
+	font-weight:300;
+}
+
+.contact-info {
+	position:absolute;
+	bottom:20px;
+	right:200px;
+	text-align:right;
+	color:white;
+	font-size:1.1rem;
+	line-height:1.5rem;
+}
+
+strong {
+	font-weight:700;
+}
+
+.booking {
+	margin-bottom:10px;
+}
+
+h2 {
+	font-size:2rem;
+	margin-bottom:20px;
+}
+
+/* Our Story Section */
+
+
+.OurStory {
+	padding:100px 0;
+}
+
+.container {
+	margin-left:250px;
+}
+
+.comp-title {
+	font-family:'PT Sans', sans-serif;
+}
+
+h4 {
+	color:grey;
+	font-size:1.1rem;
+	margin:.5rem 0 1rem;
+ }
+
+.cooking {
+	font-family:'Rozha One', serif;
+	font-size:3rem;
+	margin:.5rem 0 3rem;
+	text-transform:capitalize;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
+	font-size:1.1rem;
+	color:grey;
+	line-height:1.8;
+	margin:.5rem 0 3rem;
+}
+
+.quote {
+	color:grey;
+	margin:.5rem 0 3rem;
+}
+
+strong {
+	color:black;
+	font-weight:700;
+}
+
+.btn {
+	font-family: 'Rozha One', serif;
+	display:inline-block;
+	padding:20px 40px;
+	/*min-width:200px;*/
+	border:1px solid #000;
+	text-align:center;
+	text-decoration:none;
+	color:black;
+	text-transform:uppercase;
+	transition: all .5s ease-in-out
+
+}
+
+.btn:hover {
+	background:red;
+	color:black;
+}
+
+.row {
+	float:left;
+	width:45%;
+}
+
+.col {
+	float:right;
+	width:50%;
+}
+
+.video-img {
+	max-width:350px;
+	height:600px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image: linear-gradient(135deg,rgba(0,0,0,0) 0, #000 100%), url("http://blog.hiperbaric.com/wp-content/uploads/2017/07/cooking.png");
+	background-position:center;
+	background-size:cover;
+}
+
+.col-3 {
+	float:right;
+	width:30%;
+}
+
+#SpecialMenu {
+	padding:80px 0;
+	height:500px;
+	background:#fafafa;
+	/*background-image: url("https://st.depositphotos.com/1000112/1741/v/950/depositphotos_17415121-stock-illustration-white-paper-texture.jpg")*/;
+	background-position:center;
+	/*background-size:cover;*/
+	background-repeat:repeat;
+}
+
+
+
+.comp-title-2 {
+	color:grey;
+	font-size:1rem;
+	margin:0.5rem 0 1rem;
+	text-transform:uppercase;
+	letter-spacing:5px;
+	text-align:center;
+}
+
+.box {
+	width:200px;
+	background:#fff;
+	padding:20px;
+}
+
+.box-img {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image:url("http://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/201205-xl-beef-fried-rice.jpg?itok=DJSuhhcl");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	margin-bottom:75px;
+
+}
+
+.boximg2 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image:url("http://img.taste.com.au/9GEsdNYf/w506-h253-cfill/taste/2016/11/beef-soba-noodle-bowl-105326-1.jpeg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	margin-bottom:75px;
+
+}
+
+.box-img-3 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image:url("http://del.h-cdn.co/assets/cm/15/10/54f6520be75b5_-_grilled-flank-steak-corn-tomato-salad-xlg.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	margin-bottom:75px;
+
+}
+
+
+.price-circle {
+	box-sizing:border-box;
+	position:absolute;
+	bottom:0;
+	margin: 0 auto;
+	font-family:'Rozha One', serif;
+	font-size:2.7rem;
+	background:#fff;
+	height:100px;
+	width:100px;
+	border-radius:50%;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	left:10px;
+	transform: translate(35px, 40px);
+	-webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.41);
+	-moz-box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.41);
+	box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.41);
+
+}
+
+.title-2 {
+	color:black;
+	display:block;
+	font-weight:600;
+	font-size:1.1rem;
+	text-align:center;
+}
+
+.details {
+
+	font-weight:500;
+	font-size:0.8rem;
+	text-align:center;
+	line-height:2;
+
+}
+
+.flav {
+	text-align:center;
+	margin-bottom:60px;
+}
+
+.menu-back {
+	height:100px;
+	background:#fafafa;
+	text-align:center;
+	padding-bottom:40px;
+}
+
+.menu {
+	font-family:'Rozha One', serif;;
+	color:black;
+	text-decoration:underline;
+	display:none;
+}
+
+/* Quote Generator */
+
+#RandomQuote {
+	padding:180px 0;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image: linear-gradient(135deg,rgba(0,0,0,0) 0, #000 100%), url("https://www.tubkaakresort.com/images/slide-cooking-class01.jpg");
+	background-position:right;
+	background-size:cover;
+}
+
+.quote1 {
+	color:white;
+	font-family: 'Rozha One', serif;
+	font-size:3rem;
+	text-transform:capitalize;
+	text-align:center;
+	margin-bottom:30px;
+	max-width:600px;
+	margin: 0 auto 50px;
+}
+
+span {
+	color:white;
+	font-size:2rem;
+	font-weight:300;
+	text-transform:capitalize;
+	text-align:center;
+	display:block;
+}
+
+/* Review Section */
+
+.col-2 {
+	float:left;
+	width:40%;
+}
+
+.row-2 {
+	float:left;
+	width:45%;
+}
+
+.video-img-2 {
+	max-width:380px;
+	height:620px;
+	background-image:url("http://www.sogoodmagazine.com/wp-content/uploads/2013/06/Female-Chefs-Kitchen-Still-Feels-Like-Man-World.jpg");
+	background-position:center;
+	background-size:cover;
+}
+
+.clear {
+	clear:both;
+}
+
+/* Promotions and Events */
+
+.promo {
+	width:88%;
+}
+
+.col-6 {
+	float:right;
+	width:30%;
+
+}
+
+/*.box-2 {
+	width:200px;
+	background:#fff;
+	padding:20px;
+} */
+
+.box-img-2 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image: linear-gradient(135deg,rgba(0,0,0,0) 0, #000 100%), url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/08/03/13/lifestyle5.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.box-img-4 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background:white;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.box-img-5 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image:url("http://www.juniorchefsofamerica.org/wp-content/uploads/2013/01/Scholarship1.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.box-img-6 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background:white;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.box-img-7 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image:url("https://restaurantden.com/wp-content/uploads/2015/02/restaurant-party-ideas.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.box-img-8 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background-image:url("http://www.seriouseats.com/recipes/assets_c/2014/03/20140228-spicy-stir-fried-beef-with-leeks-and-onion-primary-thumb-625xauto-389458.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.box-img-9 {
+	width:100%;
+	height:200px;
+	background:linear-gradient(135deg,rgba(0,0,0,0) 0, #002d77 100%);
+	background:white;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.box-img-a {
+	font-size:1.5rem;
+	font-weight:bold;
+	text-align:center;
+	padding: 60px 60px 0 60px;
+
+	
+}
+
+ h6 {
+ 	font-size:1.7rem;
+ 	text-decoration:underline;
+ }
+
+.box-desc {
+	padding-top:20px;
+	color:black;
+	font-size:1rem;
+	text-decoration:none;
+	
+}
+
+/* Contact */
+
+.contact-2 {
+	width:92%;
+	height:200px;
+	background:white;
+	margin-left:105px;
+	font-family: 'PT Sans', sans-serif;
+	font-size:1.5rem;
+	line-height:1.8;
+
+}
+
+.address {
+	float:left;
+	width:45%;
+	padding:20px;
+}
+
+.number {
+	float:left;
+	width:45%;
+	padding:30px;
+}
+
+#On {
+	color:black;
+	text-align:left;
+}
+
+/*Footer */
+
+.second {
+	background-color:#2C2C2C;
+	width:100%;
+	height:450px;
+	color:white;
+}
+
+.logo-f {
+	text-align: center;
+	margin-left:280px;
+	padding-top:20px;
+
+}
+
+.footer-text-f {
+	position:relative;
+	top:-50px;
+	left:400px;
+	
+}
+
+.border {
+	display:inline-block;
+	color:white;
+	font-size:24px;
+	border-right:1px solid white;
+	width:100px;
+}
+
+ul {
+	position:relative;
+	left:390px;
+}
+.social li {
+	display:inline;
+}
+.social i {
+	font-size: 150%;
+	padding: 2% 4%;
+	color: #959595;
+}
+.social i:hover {
+	color: #F5F5F5;
+}
+.footer-copy-f {
+	position:relative;
+	left:450px;
+}
+
+/*$display-font = font-family: 'Rozha One', serif;
+font-family: 'PT Sans', sans-serif;
+$textFont = font-family: 'Open Sans Condensed', sans-serif;*/
