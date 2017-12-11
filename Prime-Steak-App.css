@@ -67,7 +67,7 @@ nav a:hover {
 	min-height:500px;
 	height:100vh;
 	background:linear-gradient(135deg,rgba(0,0,0,0.1) 0, #002d77 100%);
-	background-image: linear-gradient(135deg,rgba(0,0,0,0.1) 0, #000 100%), url("https://www.kitchencraftcookware.com/wp-content/uploads/2014/11/kitchen-craft-beef-roast.jpg");
+	background-image: linear-gradient(135deg,rgba(0,0,0,0.1) 0, #000 100%), url("http://www.simplyrecipes.com/wp-content/uploads/2014/12/prime-rib-horiz-a-1600.jpg");
 	background-position:center;
 	background-size:cover;
 	padding-right:200px;
@@ -84,6 +84,7 @@ h1 {
 	color:white;
 	font-weight:300;
 	font-size:4rem;
+	max-width:100%;
 }
 
 h5 {
@@ -577,6 +578,183 @@ ul {
 .footer-copy-f {
 	position:relative;
 	left:450px;
+}
+
+@media screen and (max-width:768px) {
+.site-nav {
+	display:none;
+}
+
+.logo {
+	position:relative;
+	right:40px;
+}
+
+.mobile-nav-toggle {
+	position:absolute;
+	width:50px;
+	height:50px;
+	/*background:pink;*/
+	right:20px;
+	display:flex;
+	align-items:center;
+	cursor:pointer;
+	top:40px;
+	right:80px;
+}
+.line, .line:before, .line:after {
+	content:"";	
+	display:block;
+	height:4px;
+	width:100%;
+	background:white;
+	position:relative;
+	transition:all 0.3s ease-in-out;
+}
+
+.line:before {
+	top:15px;
+}
+.line:after {
+	bottom:17px;
+}
+.mobile-nav-toggle:hover nav  {
+	display:block;
+}
+
+
+.mobile-nav-toggle nav, .mobile-nav-toggle nav:active {
+	z-index:1000;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:black;
+	padding:20px;
+	border:1px solid #fff;
+	border-radius: 4px 0 4px 4px;
+}
+.row {
+	width:100%;
+	text-align:center;
+	position:relative;
+	right:80px;
+}
+
+.col {
+	width:100%;
+}
+
+.btn {
+	margin-top:20px;
+}
+
+.SpecialMenu {
+	width:100%;
+
+}
+
+.col-3 {
+	position:relative;
+	right:60px;
+}
+
+#RandomQuote {
+	width:100%;
+}
+
+.quote1 {
+	position:relative;
+	right:80px;
+}
+.col-2 {
+	width:100%;
+}
+.row-2 {
+	width:100%;
+	position:relative;
+	right:60px;
+}
+
+.promo {
+	width:100%;
+}
+
+.col-6 {
+	width:50%;
+}
+#spicy {
+	z-index:1000;
+	position:absolute;
+	top:260px;
+	right:20px;
+}
+
+#wine {
+	z-index:1000;
+	position:absolute;
+	bottom:300px;
+}
+
+#enjoy {
+	position:absolute;
+	bottom:240px;
+	right:20px;
+}
+
+.contact-2 {
+	width:100%;
+	position:relative;
+	right:100px;
+}
+
+#comp-mobile {
+	position:relative;
+	top:20px;
+}
+
+#flav-mobile {
+	position:relative;
+	top:20px;
+}
+
+
+.address {
+	width:100%;
+}
+.number {
+	width:100%;
+}
+
+#number-mobile {
+	width:92%;
+	height:120px;
+	background:white;
+	font-family: 'PT Sans', sans-serif;
+	font-size:1.5rem;
+	line-height:1.8;
+}
+.second {
+	margin-top:80px;
+
+
+
+}
+
+.footer-text-f {
+	position:relative;
+	left:90px;
+}
+
+.icon-a {
+	position:relative;
+	right:200px;
+}
+
+.footer-copy-a {
+	position:relative;
+	right:280px;
+}
+
 }
 
 /*$display-font = font-family: 'Rozha One', serif;
