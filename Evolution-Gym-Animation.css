@@ -9,6 +9,7 @@
 }
 body {
 	background: #F0F0F0;
+	text-align:center;
 	color:#555;
 	font-family:'Ubuntu Condensed', sans-serif;
 	line-height:190%;
@@ -101,6 +102,7 @@ a:hover {
 	font-size:555%;
 	padding: 20%;
 }
+
 p {
 	font-family: 'Droid Sans', sans-serif;
 	text-align:justify;
