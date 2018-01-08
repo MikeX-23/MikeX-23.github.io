@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
@@ -86,8 +85,8 @@ a:hover {
 	margin: 0 auto;
 }
 .one-third {
-	float: left;
 	width: 29%;
+	float: left;
 	margin: 2%;
 }
 .circle {
@@ -100,7 +99,7 @@ a:hover {
 .one-third i {
 	color: #F0F0F0;
 	font-size:555%;
-	padding: 20%;
+	padding:20%;
 }
 
 p {
@@ -174,7 +173,7 @@ article{
 }
 
 #form-wrapper{
-	margin-left:480px;
+	margin-left:-180px;
 
 }
 input[type="email"] {
@@ -206,6 +205,8 @@ input[type="email"] {
  	margin-left:80px;
  }
 
+ /* Contact */
+
  #questions {
  	float:left;
  	width:60%;
@@ -225,7 +226,9 @@ input[type="email"] {
  	margin-bottom:200px;
  }
 
-
+#receipts {
+	margin-left:80px;
+}
 
  .buttonx {
 	display:inline-block;
@@ -456,6 +459,7 @@ footer.second {
 
 	#fit-content h5 {
 		margin-top:120px;
+		margin-right:100px;
 	}
 	#fit-content h2 {
 
@@ -465,10 +469,14 @@ footer.second {
 	}
 	#fit-content h3 {
 		position:relative;
-		right:175px;
+		right:95px;
 		width:50%;
 		margin-right:600px;
 		
+	}
+
+	#form-wrapper {
+		margin-left:300px;
 	}
 
 	#form1 {
@@ -536,4 +544,12 @@ footer.second {
 	h4 {
 		font-size:115%;
 	}
+}
+@media screen and (min-width:1000px)
+			and (max-width:1400px) 
+{
+	#logo {
+		margin-left:400px;
+	}
+
 }

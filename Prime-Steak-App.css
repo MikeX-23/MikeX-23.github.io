@@ -757,6 +757,28 @@ ul {
 
 }
 
+@media screen and (min-width:1000px)
+			and (max-width:1400px) 
+	{
+.footer-text-f {
+	position:relative;
+	top:-50px;
+	left:800px;
+	
+}
+
+ul {
+	position:relative;
+	left:790px;
+}
+
+.footer-copy-f {
+	position:relative;
+	left:850px;
+}
+
+}
+
 /*$display-font = font-family: 'Rozha One', serif;
 font-family: 'PT Sans', sans-serif;
 $textFont = font-family: 'Open Sans Condensed', sans-serif;*/
