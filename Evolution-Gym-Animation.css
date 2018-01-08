@@ -549,29 +549,26 @@ footer.second {
 			and (max-width:2400px) 
 {
 	#logo {
-		margin-right:800px;
+		margin-right:600px;
 	}
 	#fit-content h2 {
 	max-width:35%;
 	font-size:300%;
 	line-height:60px;
-	margin-left:520px;
-	color:pink;
+	margin-left:540px;
 }
 
 #fit-content p {
-	margin-left:520px;
-	color:pink;
+	margin-left:540px;
 }
 
 #contact-us p {
-	margin-left:200px;
-	color:pink;
+	margin-left:150px;
+	
 }
 
 #receipts {
 	margin-left:300px;
-	color:pink;
 }
 
 }
