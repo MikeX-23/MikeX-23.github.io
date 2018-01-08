@@ -545,8 +545,8 @@ footer.second {
 		font-size:115%;
 	}
 }
-@media screen and (min-width:1400px)
-			and (max-width:2000px) 
+@media screen and (min-width:1600px)
+			and (max-width:2400px) 
 {
 	#logo {
 		margin-right:400px;
