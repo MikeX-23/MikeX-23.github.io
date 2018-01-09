@@ -719,23 +719,7 @@ h6 {
 	letter-spacing: 10px;
 }
 
-.why {
-	position:absolute;
-	top:2150px;
-	background-color:#F5F5F5;
-	width:100%;
-	height:300px;	
 
-}
-
-.contact {
-	position:absolute;
-	top:2550px;
-	background:white;
-	width:100%;
-	height:680px;
-
-}
 
 
 .contact-form {
@@ -745,14 +729,7 @@ h6 {
 
 }
 
-.second {
-	position:absolute;
-	top:3480px;
-	background-color:#2C2C2C;
-	width:100%;
-	height:60px;
-	color:white;
-}
+
 
 
 }
