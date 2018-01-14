@@ -362,7 +362,7 @@ footer.second {
 }
 /*--- Media Queries --*/
 
-@media screen and (max-width:768px){
+@media only screen and (min-device-width: 478px){
 	header {
 		position:absolute;
 	}
@@ -431,6 +431,7 @@ footer.second {
   h4 {
   	font-size:140%;
   	text-align:center;
+	color:pink;
   }
   footer .one-third {
   	width:100%;
@@ -532,7 +533,7 @@ footer.second {
 
 
 }
-@media only screen and (min-device-width: 478px) {
+/*@media only screen and (min-device-width: 478px) {
 	h3 {
 		font-size:150%;
 	}
@@ -544,7 +545,7 @@ footer.second {
 	h4 {
 		font-size:115%;
 		color:pink
-	}
+	} */
 }
 @media screen and (min-width:1600px)
 			and (max-width:2400px) 
