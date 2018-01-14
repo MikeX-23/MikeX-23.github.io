@@ -418,8 +418,15 @@ footer.second {
 	margin:0;
 }
  h3 {
+	 font-size:170%;
  	text-align:center;
  }
+ 
+ p {
+		font-size:110%;
+		padding:7%;
+	}
+	
  article {
  	width:100%;
  	padding:0;
@@ -429,7 +436,7 @@ footer.second {
  	width:100%;
  }
   h4 {
-  	font-size:140%;
+  	font-size:125%;
   	text-align:center;
 	
   }
@@ -533,14 +540,15 @@ footer.second {
 
 
 }
+/*
 @media only screen and (max-device-width: 478px) {
 	h3 {
 		font-size:150%;
 	}
 
 	p {
-		font-size:100%;
-		margin:2%;
+		font-size:110%;
+		padding:7%;
 	}
 	h4 {
 		font-size:115%;
@@ -549,7 +557,7 @@ footer.second {
 }
 @media screen and (min-width:1600px)
 			and (max-width:2400px) 
-{
+{*/
 	
 	#fit-content h2 {
 	max-width:35%;
