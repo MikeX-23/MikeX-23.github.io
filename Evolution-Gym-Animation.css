@@ -538,11 +538,13 @@ footer.second {
 	}
 
 	p {
-		font-size:100%;
+		font-size:85%;
 		margin:2%;
+		padding:1%
 	}
 	h4 {
 		font-size:115%;
+		color:green;
 	}
 }
 @media screen and (min-width:1600px)
