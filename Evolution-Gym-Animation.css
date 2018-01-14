@@ -362,7 +362,7 @@ footer.second {
 }
 /*--- Media Queries --*/
 
-@media only screen and (min-device-width: 478px){
+@media only screen and (min-device-width: 578px){
 	header {
 		position:absolute;
 	}
@@ -433,6 +433,13 @@ footer.second {
   	text-align:center;
 	color:pink;
   }
+  
+  p {
+		font-size:85%;
+		margin:2%;
+		padding:2%;
+		color:pink;
+	}
   footer .one-third {
   	width:100%;
   	margin:0;
