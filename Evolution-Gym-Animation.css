@@ -362,7 +362,7 @@ footer.second {
 }
 /*--- Media Queries --*/
 
-@media only screen and (max-device-width: 478px){
+@media screen and (max-width:768px){
 	header {
 		position:absolute;
 	}
@@ -431,15 +431,8 @@ footer.second {
   h4 {
   	font-size:140%;
   	text-align:center;
-	color:red;
+	
   }
-  
-  p {
-		font-size:90%;
-		margin:2%;
-		padding:5%;
-		color:green;
-	}
   footer .one-third {
   	width:100%;
   	margin:0;
@@ -540,7 +533,7 @@ footer.second {
 
 
 }
-/*@media only screen and (min-device-width: 478px) {
+@media only screen and (max-device-width: 478px) {
 	h3 {
 		font-size:150%;
 	}
@@ -551,8 +544,8 @@ footer.second {
 	}
 	h4 {
 		font-size:115%;
-		color:pink
-	} */
+		color:yellow;
+	} 
 }
 @media screen and (min-width:1600px)
 			and (max-width:2400px) 
