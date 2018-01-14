@@ -362,7 +362,7 @@ footer.second {
 }
 /*--- Media Queries --*/
 
-@media only screen and (max-device-width: 678px){
+@media only screen and (max-device-width: 478px){
 	header {
 		position:absolute;
 	}
@@ -431,14 +431,14 @@ footer.second {
   h4 {
   	font-size:140%;
   	text-align:center;
-	color:pink;
+	color:red;
   }
   
   p {
-		font-size:85%;
+		font-size:90%;
 		margin:2%;
-		padding:2%;
-		color:pink;
+		padding:5%;
+		color:green;
 	}
   footer .one-third {
   	width:100%;
