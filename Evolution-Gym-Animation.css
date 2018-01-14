@@ -362,7 +362,7 @@ footer.second {
 }
 /*--- Media Queries --*/
 
-@media screen and (min-width:414px) and (max-width:768px){
+@media screen and (max-width:668px){
 	header {
 		position:absolute;
 	}
