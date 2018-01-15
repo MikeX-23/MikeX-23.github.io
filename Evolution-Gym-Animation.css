@@ -501,9 +501,20 @@ footer.second {
 
 	#form1 {
 		position:relative;
-		right:560px;
+		right:620px;
 		bottom:80px;
 		padding-bottom:20px;
+	}
+
+	input[type="email"] {
+	padding:4px;
+	height:40px;
+	width:17%;
+}
+
+	#button1 {
+		width:7%;
+		height:48px;
 	}
 
 	#options form {
@@ -547,7 +558,7 @@ footer.second {
 		bottom:120px;
 		width:100%;
 		text-align:center;
-		right:60px;
+		right:30px;
 	}
 
 	#contact-us h3 {
