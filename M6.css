@@ -388,7 +388,6 @@ input[type="tel"] {
 }
 
 
-
 @media screen and (max-width:890px) {
 
 	.home-wrap header {
@@ -592,12 +591,12 @@ h5 {
 	}
 
 	h2 {
-		font-size:35px;
+		font-size:25px;
 		position:relative;
 		left:170px;
 		top:-73px;
 		width:20%;
-		color:pink;	
+		
 	}
 
 	h3 {
@@ -651,7 +650,7 @@ h5 {
 
 	h5 {
 		position:absolute;
-		left:130px;
+		left:110px;
 	}
 
 	.one-fourth img {
@@ -676,7 +675,7 @@ h6 {
 
 .one-third span {
 	float:left;
-	width:28%;
+	width:29%;
 	background:none;
 	padding-right:28px;
 	font-size:85%;
@@ -701,7 +700,7 @@ h6 {
 
 .contact {
 	max-width:97%;
-	top:2900px;
+	top:2600px;
 }
 
 .contact p {
@@ -746,7 +745,7 @@ input[type="tel"] {
 }
 
 .second {
-	top:3800px;
+	top:3700px;
 	max-width:97%;
 }
 }
