@@ -388,6 +388,8 @@ input[type="tel"] {
 }
 
 
+
+
 @media screen and (max-width:890px) {
 
 	.home-wrap header {
@@ -591,7 +593,7 @@ h5 {
 	}
 
 	h2 {
-		font-size:25px;
+		font-size:18px;
 		position:relative;
 		left:170px;
 		top:-73px;
@@ -670,14 +672,14 @@ h6 {
 }
 
 .one-third {
-	padding-left:40px;
+	padding-left:20px;
 }
 
 .one-third span {
 	float:left;
-	width:29%;
+	width:24%;
+	padding:8px;
 	background:none;
-	padding-right:28px;
 	font-size:85%;
 }
 
@@ -745,7 +747,7 @@ input[type="tel"] {
 }
 
 .second {
-	top:3700px;
+	top:3300px;
 	max-width:97%;
 }
 }
@@ -821,4 +823,7 @@ h6 {
 }
 
 }
+
+
+
 
