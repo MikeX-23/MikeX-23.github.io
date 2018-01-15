@@ -361,7 +361,6 @@ footer.second {
 	height:500px;
 }
 /*--- Media Queries --*/
-
 @media screen and (max-width:768px){
 	header {
 		position:absolute;
@@ -466,19 +465,32 @@ footer.second {
 	}
 
 	#fit-content h5 {
+		position:relative;
 		margin-top:120px;
-		margin-right:100px;
+		margin-right:900px;
+		right:280px;
+		font-size:80%;
 	}
 	#fit-content h2 {
-
+		position:relative;
+		top:140px;
+		right:380px;
+		font-size:130%;
+		width:50%;
 	}
 	#fit-content p {
-		width:30%;
+		position:relative;
+		top:80px;
+		right:360px;
+		width:20%;
+		font-size:90%;
 	}
 	#fit-content h3 {
 		position:relative;
-		right:95px;
+		bottom:40px;
+		right:400px;
 		width:50%;
+		font-size:120%;
 		margin-right:600px;
 		
 	}
@@ -489,12 +501,22 @@ footer.second {
 
 	#form1 {
 		position:relative;
-		right:200px;
+		right:560px;
+		bottom:80px;
 		padding-bottom:20px;
 	}
 
+	#options form {
+		position:relative;
+		right:40px;
+	}
+
+	/* contact */
+
 	#questions {
 		text-align:center;
+		position:relative;
+		right:80px;
 	}
 
 	#questions-content {
@@ -525,6 +547,7 @@ footer.second {
 		bottom:120px;
 		width:100%;
 		text-align:center;
+		right:60px;
 	}
 
 	#contact-us h3 {
@@ -535,29 +558,18 @@ footer.second {
 		text-align:center;
 	}
 
+	#receipts {
+		position:relative;
+		right:60px;
+	}
+
 	}
 	
 
 
-}
-/*
-@media only screen and (max-device-width: 478px) {
-	h3 {
-		font-size:150%;
-	}
-
-	p {
-		font-size:110%;
-		padding:7%;
-	}
-	h4 {
-		font-size:115%;
-		color:yellow;
-	} */
-}
 @media screen and (min-width:1600px)
 			and (max-width:2400px) 
-
+{
 	
 	#fit-content h2 {
 	max-width:35%;

@@ -389,7 +389,6 @@ input[type="tel"] {
 
 
 
-
 @media screen and (max-width:890px) {
 
 	.home-wrap header {
@@ -434,8 +433,6 @@ input[type="tel"] {
 	align-items:center;
 	cursor:pointer;
 }
-
-
 
 	.line, .line:before, .line:after {
 	content:"";	
@@ -505,6 +502,7 @@ h2 {
 	position:absolute;
 	top:20px;
 	font-size:40px;
+	color:green;
 }
 
 .about {
@@ -585,7 +583,7 @@ h5 {
 }
 
 @media screen and (min-width:200px)
-			and (max-width:650px) 
+			and (max-width:720px) 
 		{
 
 		
@@ -595,6 +593,7 @@ h5 {
 
 	h2 {
 		font-size:35px;
+		color:pink;
 	}
 
 	h3 {
@@ -754,6 +753,8 @@ h6 {
 	height:60px;
 	color:white;
 }
+
 }
+
 
 
