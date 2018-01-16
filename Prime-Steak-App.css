@@ -76,6 +76,7 @@ nav a:hover {
 .title {
 	padding:200px 0 50px;
 	text-align:right;
+
 }
 
 h1 {
@@ -633,51 +634,149 @@ ul {
 	border:1px solid #fff;
 	border-radius: 4px 0 4px 4px;
 }
-.row {
-	width:100%;
-	text-align:center;
-	position:relative;
+/* intro */
+
+.logo {
 	right:80px;
 }
 
-.col {
+.title {
+	position:relative;
+	right:20px;
+}
+
+ .title h5 {
+ 	font-size:95%;	
+ }
+
+ .title h1 {
+ 	font-size:160%;
+ }
+
+ .contact-info {
+ 	position:relative;
+ 	bottom:50px;
+ 	right:20px;
+ }
+
+ .booking {
+ 	position:relative;
+ 	top:15px;
+ 	right:40px;
+ 	
+ 	display:inline-block;
+ 	width:120px;
+
+ }
+
+ .contact-info h2 {
+ 	position:relative;
+ 	bottom:20px;
+ 	left:90px;
+ 	line-height:1.2;
+ 	font-size:80%;
+ 	display:inline-block;
+ 	width:80px;
+
+ }
+
+ .hours {
+ 	position:relative;
+ 	right:40px;
+ 	bottom:20px;
+ 	display:inline-block;
+ 	width:220px;
+ }
+
+.row {
 	width:100%;
+	position:relative;
+	right:120px;
+}
+
+.video-img {
+	width:200%;
+	position:relative;
+	right:260px;
+	
 }
 
 .btn {
 	margin-top:20px;
+	position:relative;
+	right:80px;
 }
 
-.SpecialMenu {
-	width:100%;
-
-}
+/* Menu */
 
 .col-3 {
-	position:relative;
-	right:60px;
+	width:70%;
 }
+
+#SpecialMenu {
+	width:100%;
+	background:white;
+
+}
+
+
 
 #RandomQuote {
 	width:100%;
+	height:70px;
+	position:relative;
+	top:800px;
 }
 
 .quote1 {
-	position:relative;
-	right:80px;
+	position:absolute;
+	right:110px;
+	color:white;
+	font-size:120%;
+}
+
+.author {
+	position:absolute;
+	bottom:140px;
+	left:140px;
+
 }
 .col-2 {
 	width:100%;
 }
+.video-img-2 {
+	height:300px;
+	position:relative;
+	top:500px;
+	right:120px;
+}
 .row-2 {
 	width:100%;
+	top:520px;
 	position:relative;
-	right:60px;
+	right:140px;
 }
 
-.promo {
-	width:100%;
+/* Promo */
+#mobile-news {
+	position:relative;
+	top:460px;
 }
+
+#mobile-promo {
+	position:relative;
+	top:460px;
+}
+
+
+
+.promo {
+	position:relative;
+	top:460px;
+	width:100%;
+
+}
+
 
 .col-6 {
 	width:50%;
@@ -693,36 +792,44 @@ ul {
 	z-index:1000;
 	position:absolute;
 	bottom:300px;
+	left:12px;
 }
 
 #enjoy {
 	position:absolute;
 	bottom:240px;
-	right:20px;
+	left:2px;
 }
 
 .contact-2 {
 	width:100%;
 	position:relative;
 	right:100px;
+	top:60px;
 }
 
 #comp-mobile {
 	position:relative;
-	top:20px;
+	top:580px;
+	right:40px;
 }
 
 #flav-mobile {
 	position:relative;
-	top:20px;
+	top:580px;
+	right:40px;
 }
 
 
 .address {
 	width:100%;
+	position:relative;
+	right:10px;
 }
 .number {
 	width:100%;
+	position:relative;
+	right:20px;
 }
 
 #number-mobile {
@@ -734,29 +841,43 @@ ul {
 	line-height:1.8;
 }
 .second {
+	position:relative;
+	top:500px;
 	margin-top:80px;
+}
 
-
-
+#mobile-logo {
+	position:relative;
+	right:40px;
 }
 
 .footer-text-f {
 	position:relative;
-	left:90px;
+	left:20px;
+}
+
+.border {
+	font-size:90%;
+	width:10%;
+	padding:5px;
 }
 
 .icon-a {
 	position:relative;
-	right:200px;
+	right:320px;
 }
 
 .footer-copy-a {
 	position:relative;
-	right:280px;
+	top:20px;
+	right:380px;
+}
+
+.copy {
+	font-size:80%;
 }
 
 }
-
 @media screen and (min-width:1600px)
 			and (max-width:2400px) 
 	{
@@ -778,6 +899,8 @@ ul {
 }
 
 }
+
+
 
 /*$display-font = font-family: 'Rozha One', serif;
 font-family: 'PT Sans', sans-serif;

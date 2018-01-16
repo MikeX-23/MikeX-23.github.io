@@ -664,7 +664,7 @@ h5 {
 .why {
 	max-width:97%;
 	top:2000px;
-	height:420px;
+	height:440px;
 }
 
 h6 {
@@ -679,7 +679,7 @@ h6 {
 .one-third span {
 	float:left;
 	width:80%;
-	padding:30px 0px 40px 10px;
+	padding:30px 0px 50px 10px;
 	background:none;
 	font-size:85%;
 }
@@ -703,7 +703,7 @@ h6 {
 
 .contact {
 	max-width:97%;
-	top:2510px;
+	top:2530px;
 }
 
 .contact p {
