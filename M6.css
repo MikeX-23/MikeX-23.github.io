@@ -389,7 +389,6 @@ input[type="tel"] {
 
 
 
-
 @media screen and (max-width:890px) {
 
 	.home-wrap header {
@@ -673,12 +672,14 @@ h6 {
 
 .one-third {
 	padding-left:5px;
+	position:relative;
+	top:20px;
 }
 
 .one-third span {
 	float:left;
 	width:80%;
-	padding:30px 0px 65px 10px;
+	padding:30px 0px 75px 10px;
 	background:none;
 	font-size:85%;
 }
@@ -823,4 +824,6 @@ h6 {
 }
 
 }
+
+
 
