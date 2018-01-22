@@ -225,3 +225,76 @@ body {
 
  }
  
+ @media screen and (min-width:2000px)
+			and (max-width:2600px) {
+
+	.top .content-body {
+	background:url(https://vidur.net/wp-content/uploads/2017/04/kobe-bryant-wallpaper-2015-wallpapersafari-kobe-bryant-wallpaper.jpg);
+	background-position:center;
+	background-size:cover;
+	width:2400px;
+	height:1100px;
+	position:absolute;
+	left:-260px;
+	color:#222;
+}
+
+#summary-2 {
+	position:absolute;
+	top:120px;
+	left:400px;
+	color:#FDAB00;
+	font-weight:900;
+	font-family: 'Oswald', sans-serif;
+	font-size:120%;
+}
+
+#mamba {
+	position:absolute;
+	top:180px;
+	left:1640px;
+	color:#FDAB00;
+	font-weight:900;
+	font-family: 'Dancing Script', cursive;
+	font-size:400%;
+
+}
+
+.bottom .content-body {
+	background:url(http://clevelandsportsline.com/wp-content/uploads/2017/06/new-banner-add-patch-close-upjpg-2fdf5d1bfd156a72.jpg);
+	background-position:center;
+	background-size:cover;
+	width:2100px;
+	height:1100px;
+	position:absolute;
+}
+
+#lebron {
+	margin-left:760px;
+	color:white;
+	font-weight:bold;
+	font-family: 'Oswald', sans-serif;
+	font-size:250%;
+}
+
+#summary {
+	position:absolute;
+	top:140px;
+	left:1620px;
+	font-weight:600;
+	font-family: 'Oswald', sans-serif;
+	font-size:120%;
+
+}
+
+#king {
+	position:absolute;
+	top:370px;
+	left:200px;
+	font-family: 'Alfa Slab One', cursive;
+	font-size:560%;
+}
+
+
+}
+ 

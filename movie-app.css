@@ -385,3 +385,13 @@ body {
 	font-weight:500;
 	letter-spacing:1px;
 }
+
+@media screen and (max-width:760px) {
+
+.container {
+	width:550px;
+	margin:20px auto;
+	margin-left:100px;
+}
+
+}

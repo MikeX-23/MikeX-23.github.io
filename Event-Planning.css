@@ -492,3 +492,13 @@ div.footer span.event-location span.distance {
 	2px 2px 0 rgba(0,0,0,0.1),
 	2px 2px 5px rgba(0,0,0,0.3);
 }
+
+@media screen and (max-width:760px) {
+
+.container {
+	width:430px;
+	height:900px;
+	margin: 0px auto;
+}
+
+}
