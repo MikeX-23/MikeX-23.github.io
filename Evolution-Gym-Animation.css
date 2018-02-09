@@ -774,6 +774,8 @@ footer.second {
 
 	#method p {
 		text-align:center;
+		color:pink;
+		font-size:85%;
 	}
 
 	.one-half {
@@ -904,7 +906,7 @@ footer.second {
 
 
 .loginbox {
-	width:320px;
+	width:220px;
 	height:450px;
 	background:#405580;
 	color:#fff;/*

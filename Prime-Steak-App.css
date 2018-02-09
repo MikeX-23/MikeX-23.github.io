@@ -902,13 +902,13 @@ ul {
 
 
 .loginbox {
-	width:320px;
+	width:220px;
 	height:450px;
 	background:#000;
 	color:#fff;
 	position:relative;
 	top:560px;
-	left:40px;
+	left:100px;
 	box-sizing:border-box;
 	padding: 20px 30px;
 
