@@ -774,10 +774,13 @@ footer.second {
 
 	#method p {
 		text-align:center;
-		color:pink;
+		top:85%;
 		font-size:85%;
 	}
 
+	#team {
+		margin-top:200px;
+	}
 	.one-half {
 		width:100%;
 	}
@@ -925,6 +928,7 @@ footer.second {
 	padding-bottom:10px;
 	padding-top:10px;
 	font-size:18px;
+	padding-left:30px;
 }
 
 .loginbox input {
@@ -976,6 +980,7 @@ textarea::placeholder {
 	margin-top:20px;
 	font-size:18px;
 	width:160px;
+	margin-left:30px;
 
 }
 
