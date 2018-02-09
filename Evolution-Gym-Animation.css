@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
@@ -133,6 +134,151 @@ article{
 .one-third img {
 	padding:2%;
 }
+/* Training */
+
+#training-wrapper {
+	overflow:hidden;
+}
+
+#training-header {
+	background: url(https://source.unsplash.com/0-hB59n1m94) no-repeat center;
+	background-size:cover;
+	height:400px;
+}
+
+#training-header h2  {
+	position:absolute;
+	top:20%;
+	left:43%;
+	color:#fff;
+	font-weight:800;
+}
+
+#training-header h2:after {
+	content:"";
+	display:block;
+	background:#fff;
+	width:60px;
+	height: 2px;
+	margin:auto;
+}
+
+#training-header h1 {
+	position:absolute;
+	top:30%;
+	left:24%;
+	color:#fff;
+	line-height:1.5;
+	font-weight:800;
+	font-size:48px;
+}
+
+#method {
+	background: #F0F0F0;
+	height:200px;
+}
+
+ #method p {
+	position:absolute;
+	top:77%;
+	left:22%;
+	width:50%;
+}
+
+#team {
+	margin-top:100px;
+	height:400px;
+	background: #fff;
+}
+
+.one-half {
+	width:50%;
+	float:left;
+	background:#fff;
+}
+
+.one-half h4 {
+	letter-spacing:3px;
+}
+
+.one-half p {
+	width:60%;
+	padding:5px 25px;
+	margin-top:30px;
+	margin-left:140px;
+}
+
+#t {
+	color: #405580;
+	letter-spacing:20px;
+	font-weight:800;
+}
+
+#personal {
+	height:500px;
+	background: #fff;
+}
+
+.one-half-2 {
+	width:60%;
+	float:left;
+	background:#fff;
+}
+
+.one-half-3 {
+	width:27%;
+	float:left;
+	background:#fff;
+}
+
+#pilates {
+	height:390px;
+	background:#fff;
+}
+
+.one-half-4 {
+	width:50%;
+	float:left;
+	background:#fff;
+}
+
+.one-half-5 {
+	width:50%;
+	float:left;
+	background:#fff;
+}
+
+#pilates p {
+	width:60%;
+	margin-left:140px;
+}
+
+#workout-pic-1{
+	width:50%;
+	float:left;
+}
+#workout-pic-2{
+	width:50%;
+	float:left;
+}
+
+
+#training-closer {
+	background:#405580;
+	color:white;
+}
+#training-closer h4 {
+	padding-top:30px;
+}
+
+#training-closer p {
+	position:relative;
+	width:60%;
+	bottom:40px;
+	left:20%;
+
+}
+
 
 /* Membership */
 
@@ -202,7 +348,7 @@ input[type="email"] {
 }
  select {
  	padding:10px;
- 	margin-left:80px;
+ 	margin: 0 auto;
  }
 
  /* Contact */
@@ -212,18 +358,95 @@ input[type="email"] {
  	width:60%;
  	margin-top:120px;
  	margin-left:40px;
- 	margin-bottom:40px;
+ 	margin-bottom:200px;
  }
  #questions-content {
  	margin:auto 0;
  }
+
+
+.loginbox {
+	width:320px;
+	height:450px;
+	background:#405580;
+	color:#fff;/*
+	position:relative;
+	top:40px;
+	left:260px;*/
+	margin: 80px auto;
+	box-sizing:border-box;
+	padding: 20px 30px;
+
+}
+
+.c {
+	margin-right:200px;
+	font-weight:bold;
+	padding-bottom:10px;
+	padding-top:10px;
+	font-size:18px;
+}
+
+.loginbox input {
+	width:100%;
+}
+
+.loginbox input::placeholder {
+	color:white;
+}
+
+
+.loginbox input[type="text"], .loginbox input[type="email"] {
+	border:none;
+	border-bottom: 2px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+textarea {
+	width:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:2px solid white;
+	color:#fff;
+	font-size:18px;
+
+}
+
+textarea::placeholder {
+	color:white;
+}
+
+
+
+.loginbox input[type="submit"] {
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fff;
+	color:#405580;
+	margin-top:20px;
+	font-size:18px;
+	width:160px;
+
+}
+
+.loginbox input[type="submit"]:hover {
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
 
  #contact-us {
  	float:right;
  	width:33%;
  	margin-top:120px;
  	margin-left:40px;
- 	margin-bottom:200px;
+ 	margin-bottom:400px;
  }
 
 #receipts {
@@ -276,6 +499,86 @@ input[type="email"] {
 	font-size:16px;
 	font-weight:900;
 	text-align:center;
+}
+
+.one-third-b {
+	width: 29%;
+	float: left;
+	margin: 2%;
+}
+
+.places {
+	text-align:center;
+}
+
+.view-club {
+	font-size:16px;
+	text-align:center;
+	font-weight:bold;
+	text-decoration:underline;
+	cursor:pointer;
+
+}
+
+
+.modal {
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	overflow:auto;
+	background-color:rgba(0,0,0,0.5);
+}
+
+
+.modal-content {
+	background-color:#f4f4f4;
+	margin:15% auto;
+	padding:20px;
+	width:60%;
+	height:350px;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0, 0.2),
+	0 7px 20px 0 rgba(0,0,0, 0.17);
+	animation-name:modalopen;
+	animation-duration:1s;
+}
+
+#c {
+	float:right;
+	width:50%;
+	position:relative;
+	bottom:180px;
+}
+
+.c-2 {
+	color:grey;
+}
+
+#email-us {
+	text-decoration:none;
+	padding-left:10px;
+}
+
+
+.closeBtn {
+	color:#ccc;
+	float:right;
+	font-size:30px;
+
+}
+
+.closeBtn:hover {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+@keyframes modalopen {
+	from{opacity:0}
+	to {opacity:1}
 }
 
 
@@ -360,7 +663,7 @@ footer.second {
 	width: 1100px;
 	height:500px;
 }
-/*--- Media Queries --*/
+
 @media screen and (max-width:768px){
 	header {
 		position:absolute;
@@ -458,6 +761,74 @@ footer.second {
 	text-align:center;
 	}
 
+	/* training */
+
+	#training-header h2 {
+		font-size:100%;
+	}
+
+	#training-header h1 {
+		font-size:140%;
+		width:60%;
+	}
+
+	#method p {
+		text-align:center;
+	}
+
+	.one-half {
+		width:100%;
+	}
+
+	.one-half p {
+		text-align:center;
+		margin-left:60px;
+	}
+
+	.one-half-2 {
+		width:100%;
+	}
+
+	.one-half-3 {
+		width:100%;
+	}
+	.one-half-3 p {
+		text-align:center;
+	}
+
+	.one-half-4 {
+		width:100%;
+	}
+
+	.one-half-4 p {
+		text-align:center;
+		position:relative;
+		right:80px;
+
+	}
+
+	.one-half-5 {
+		width:100%;
+	}
+
+	#training-closer h4 {
+		text-align:center;
+
+	}
+
+	#training-closer p {
+		text-align:center;
+		position: relative;
+	}
+
+	#workout-pic-1 {
+		width:100%;
+	}
+	#workout-pic-2 {
+		width:100%;
+	}
+
+	/* Memberships */
 
 	#fit-content{
 		width:100%;
@@ -517,14 +888,102 @@ footer.second {
 		height:48px;
 	}
 
+
+
 	#options form {
-		position:relative;
-		right:40px;
+		margin: 0 auto;
+	}
+
+	/* Find a Gym */
+
+	.one-third-b {
+		width:100%;
 	}
 
 	/* contact */
 
-	#questions {
+
+.loginbox {
+	width:320px;
+	height:450px;
+	background:#405580;
+	color:#fff;/*
+	position:relative;
+	top:40px;
+	left:260px;*/
+	margin: 80px auto;
+	box-sizing:border-box;
+	padding: 20px 30px;
+
+}
+
+.c {
+	margin-right:150px;
+	font-weight:bold;
+	padding-bottom:10px;
+	padding-top:10px;
+	font-size:18px;
+}
+
+.loginbox input {
+	width:100%;
+}
+
+.loginbox input::placeholder {
+	color:white;
+}
+
+
+.loginbox input[type="text"], .loginbox input[type="email"] {
+	border:none;
+	border-bottom: 2px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	position:relative;
+	left:30px;
+}
+
+textarea {
+	width:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:2px solid white;
+	color:#fff;
+	font-size:18px;
+	position:relative;
+	left:30px;
+
+}
+
+textarea::placeholder {
+	color:white;
+}
+
+
+
+.loginbox input[type="submit"] {
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fff;
+	color:#405580;
+	margin-top:20px;
+	font-size:18px;
+	width:160px;
+
+}
+
+.loginbox input[type="submit"]:hover {
+	cursor:pointer;
+
+}
+
+
+#questions {
 		text-align:center;
 		position:relative;
 		right:80px;

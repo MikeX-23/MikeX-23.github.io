@@ -502,6 +502,83 @@ span {
 
 /* Contact */
 
+#Contact-sec {
+	padding:80px 0;
+	height:1100px;
+	background:#fafafa;
+	/*background-image: url("https://st.depositphotos.com/1000112/1741/v/950/depositphotos_17415121-stock-illustration-white-paper-texture.jpg")*/;
+	background-position:center;
+	/*background-size:cover;*/
+	background-repeat:repeat;
+}
+
+.loginbox {
+	width:320px;
+	height:450px;
+	background:#000;
+	color:#fff;
+	position:relative;
+	bottom:40px;
+	left:520px;
+	box-sizing:border-box;
+	padding: 20px 30px;
+
+}
+
+.c {
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	padding-bottom:10px;
+	padding-top:10px;
+	font-size:18px;
+}
+
+.loginbox input {
+	width:100%;
+}
+
+.loginbox input[type="text"], input[type="email"] {
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+textarea {
+	width:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:1px solid grey;
+	color:#fff;
+	font-size:18px;
+
+}
+
+
+
+.loginbox input[type="submit"] {
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	color:#fff;
+	border-radius:20px;
+	margin-top:20px;
+	font-size:18px;
+
+}
+
+.loginbox input[type="submit"]:hover {
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+
 .contact-2 {
 	width:92%;
 	height:200px;
@@ -580,7 +657,6 @@ ul {
 	position:relative;
 	left:450px;
 }
-
 
 @media screen and (max-width:768px) {
 .site-nav {
@@ -824,11 +900,80 @@ ul {
 	font-size:85%;
 }
 
+
+.loginbox {
+	width:320px;
+	height:450px;
+	background:#000;
+	color:#fff;
+	position:relative;
+	top:560px;
+	left:40px;
+	box-sizing:border-box;
+	padding: 20px 30px;
+
+}
+
+.c {
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	padding-bottom:10px;
+	padding-top:10px;
+	font-size:18px;
+}
+
+.loginbox input {
+	width:100%;
+}
+
+.loginbox input[type="text"], input[type="email"] {
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+textarea {
+	width:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:1px solid grey;
+	color:#fff;
+	font-size:18px;
+
+}
+
+
+
+.loginbox input[type="submit"] {
+	border:none;
+	outline:none;
+	height:40px;
+	background:#fb2525;
+	color:#fff;
+	border-radius:20px;
+	margin-top:20px;
+	font-size:18px;
+
+}
+
+.loginbox input[type="submit"]:hover {
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}
+
+
 .contact-2 {
 	width:100%;
 	position:relative;
 	right:100px;
-	top:60px;
+	top:160px;
 }
 
 #comp-mobile {
