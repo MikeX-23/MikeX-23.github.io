@@ -1047,6 +1047,36 @@ textarea::placeholder {
 @media screen and (min-width:1600px)
 			and (max-width:2400px) 
 {
+
+	#training-header h1 {
+	position:absolute;
+	top:20%;
+	left:24%;
+	color:#fff;
+	line-height:1.5;
+	font-weight:800;
+	font-size:48px;
+}
+
+	#training-header h2  {
+	position:absolute;
+	top:10%;
+	left:43%;
+	color:#fff;
+	font-weight:800;
+}
+
+ #method p {
+	position:absolute;
+	top:57%;
+	left:22%;
+	width:50%;
+}
+
+#pilates {
+	height:630px;
+	background:#fff;
+}
 	
 	#fit-content h2 {
 	max-width:35%;

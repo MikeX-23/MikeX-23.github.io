@@ -1046,6 +1046,19 @@ textarea {
 @media screen and (min-width:1600px)
 			and (max-width:2400px) 
 	{
+
+	.loginbox {
+	width:320px;
+	height:450px;
+	background:#000;
+	color:#fff;
+	position:relative;
+	bottom:40px;
+	left:680px;
+	box-sizing:border-box;
+	padding: 20px 30px;
+
+}
 .footer-text-f {
 	position:relative;
 	top:-50px;
