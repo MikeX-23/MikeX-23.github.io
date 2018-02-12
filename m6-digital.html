@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Panels ??</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="m6-digital.css">
+</head>
+<body>
+  <style>
+    html {
+      box-sizing: border-box;
+      font-family:'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+    }
+    body {
+      margin: 0;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .panels {
+      min-height:100vh;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .panel {
+      background:#6B0F9C;
+      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+      color:white;
+      text-align: center;
+      align-items:center;
+      /* Safari transitionend event.propertyName === flex */
+      /* Chrome + FF transitionend event.propertyName === flex-grow */
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+      font-size: 20px;
+      background-size:cover;
+      background-position:center;
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .panel-header {
+      display:flex;
+      flex:0.8;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      align-items:center;
+    }
+
+    .panel1 { 
+      background-image:url(https://source.unsplash.com/KuUxlN0ZjtQ); 
+      background-position: center;
+
+    }
+    .panel2 {
+      background-image:url(https://www.6smarketing.com/drive/uploads/2015/07/home_image_1-1000x625.jpg); 
+    }
+    .panel3 
+    { 
+      background-image:url(https://source.unsplash.com/UCZF1sXcejo); 
+    }
+    .panel4 { 
+      background:white;
+    }
+    .panel5 { 
+     background-color:#F5F5F5;; 
+    }
+    .panel6 {
+      background:white;
+    }
+
+    /* Flex Items */
+    .panel > * {
+      margin:0;
+      width: 100%;
+      transition:transform 0.5s;
+      flex: 1 0 auto;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .panel > *:first-child { transform: translateY(-100%); }
+    .panel.open-active > *:first-child { transform: translateY(0); }
+    .panel > *:last-child { transform: translateY(100%); }
+    .panel.open-active > *:last-child { transform: translateY(0); }
+
+    .panel p {
+      font-family: 'Amatic SC', cursive;
+      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+      font-size: 2em;
+    }
+    .panel p:nth-child(2) {
+      font-size: 4em;
+    }
+
+    .panel.open {
+      flex: 5;
+      font-size:25px;
+    }
+
+  header {
+  width:165px;
+  background:white;
+  padding:30px 0;
+}
+
+   .header-position {
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+}
+
+.logo {
+  font-family: 'Lobster';
+  font-size:60px;
+  width:100%;
+  text-align:center;
+  position:relative;
+  bottom:70px;
+  background:red;
+  height:80px;
+  padding:0;
+}
+
+.site-nav {
+  position:relative;
+  bottom:40px;
+
+}
+
+.site-nav ul {
+  list-style:none;
+  padding:0;
+  text-align:right;
+  padding: 0px 20px 0 0;
+}
+
+.site-nav li {
+  padding:10px;
+  margin-bottom:10px;
+  text-align: center;
+
+}
+
+.site-nav a {
+  text-decoration:none;
+  color:red;
+  font-family: 'Fira Sans', sans-serif;
+  font-size:20px;
+}
+
+.site-nav a:hover {
+  text-decoration:underline;
+}
+
+.one-fourth img {
+  float:left;
+  width:11%;
+}
+
+
+#create{
+  font-family: 'Roboto', sans-serif;
+  font-size:180%;
+}
+#p1 {
+  font-family: 'Roboto', sans-serif;
+  width:75%;
+  font-size:100%;
+  margin-left:40px;
+}
+#reliable {
+  font-family: 'Roboto', sans-serif;
+  font-size:180%;
+}
+#p2 {
+   font-family: 'Roboto', sans-serif;
+  font-size:100%;
+}
+#secure {
+  font-family: 'Roboto', sans-serif;
+  font-size:180%;
+}
+#p3 {
+  font-family: 'Roboto', sans-serif;
+  font-size:100%;
+}
+#clientsx {
+  font-family: 'Roboto', sans-serif;
+  font-size:180%;
+}
+#p4 {
+  font-family: 'Roboto', sans-serif;
+  font-size:100%;
+}
+ #why-us {
+  font-family: 'Roboto', sans-serif;
+  font-size:180%;
+ }
+ #p5 {
+  font-family: 'Roboto', sans-serif;
+  font-size:100%;
+ }
+ #contactx {
+  font-family: 'Roboto', sans-serif;
+  font-size:180%;
+ }
+
+@media screen and (max-width:768px) {
+
+
+}
+  
+
+  </style>
+  <div class="panels">
+  <div class="panel-header">
+  <header class="header-position">
+  <h1 class="logo">M6</h1>
+  <div class="mobile-nav-toggle">
+    <span class="line"></span>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#" id="Home">Home</a></li>
+      <li><a href="#" id="About">About</a></li>
+      <li><a href="#" id="Services">Services</a></li>
+      <li><a href="#" id="Clients">Clients</a></li>
+      <li><a href="#" id="Why">Why Us</a></li>
+      <li><a href="#" id="Contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+    </div>
+    <div class="panel panel1" id="home-1">
+      <p>Our Mission</p>
+      <p id="create">WE CREATE</p>
+      <p id="p1"> We will help you create and build your brand.</p>
+    </div>
+    <div class="panel panel2" id="about-1">
+      <p>Who We Are</p>
+      <p id="reliable"> WE ARE RELIABLE</p>
+      <p id="p2">We are a reliable digital agency that uses results-oriented digital strategies for the best possible outcome.</p>
+    </div>
+    <div class="panel panel3" id="services-1">
+      <p>What We Do</p>
+      <p id="secure">WE SECURE</p>
+      <p id="p3">We secure great return on your investment by providing goals assessment, branding and indentity, and platform strategy.</p>
+    </div>
+    <div class="panel panel4" id="clients-1">
+      <p>Our Clients</p>
+      <p id="clientsx">WE HELP CLIENTS
+        <div class="one-fourth">
+    <img src="http://fcvca.s3.amazonaws.com/files/173787896720924652-tourism-sasketchewan.png"/>
+    <img src="http://fcvca.s3.amazonaws.com/files/900734272161429009-cpac.png"/>
+    <img src="http://fcvca.s3.amazonaws.com/files/755809848118562142-4-0-work-clients-government-alberta.one-third.jpg"/>
+    <img src="http://fcvca.s3.amazonaws.com/files/120150014625811499-nova-scotia.png"/>
+    <img src="http://fcvca.s3.amazonaws.com/files/25847283014489510-govon.png"/>
+    <img src="http://fcvca.s3.amazonaws.com/files/171365301154838340-4-0-work-clients-westjet.one-third.jpg"/>
+    <img src="http://fcvca.s3.amazonaws.com/files/370003177818457348-4-0-work-clients-bestbuy-futureshop.one-third.jpg"/>
+    <img src="http://fcvca.s3.amazonaws.com/files/406930605920215189-bclc.png"/>
+    </div>
+      </p>
+      <p id="p4">We help our clients make better digital strategy decisions and become more profitable and valuable.
+      </p>
+     
+    </div>
+    <div class="panel panel5" id="why-1">
+      <p>Why Us</p>
+      <p id="why-us">WHY US?</p>
+      <p id="p5">Because we are independent, agile and practical. </p>
+    </div>
+    <div class="panel panel6" id="contact-1">
+      <p>Contact us</p>
+      <p id="contactx">LET US BECOME YOUR TRUSTED PARTNER!</p>
+      <p>Email us at hr@m6.ca</p>
+  </form>
+    </div>
+  </div>
+
+  <script>
+    const panels = document.querySelectorAll('.panel');
+    const homeLink = document.getElementById('Home');
+    const homePanel = document.getElementById('home-1');
+    const aboutLink = document.getElementById('About');
+    const aboutPanel = document.getElementById('about-1');
+    const serviceLink = document.getElementById('Services');
+    const servicePanel = document.getElementById('services-1');
+    const clientsLink = document.getElementById('Clients');
+     const clientsPanel = document.getElementById('clients-1');
+     const whyLink = document.getElementById('Why');
+     const whyPanel = document.getElementById('why-1');
+     const contactLink = document.getElementById('Contact');
+     const contactPanel = document.getElementById('contact-1');
+
+    function toggleOpen() {
+      console.log('Hello');
+      this.classList.toggle('open');
+
+    }
+
+    function homeOpen() {
+      console.log('Hello');
+      homePanel.classList.toggle('open');
+
+    }
+
+     function aboutOpen() {
+      console.log('Hello');
+      aboutPanel.classList.toggle('open');
+    }
+
+       function serviceOpen() {
+      console.log('Hello');
+      servicePanel.classList.toggle('open');
+    }
+
+    function clientsOpen() {
+      console.log('Hello');
+      clientsPanel.classList.toggle('open');
+    }
+     function whyOpen() {
+      console.log('Hello');
+      whyPanel.classList.toggle('open');
+    }
+     function contactOpen() {
+      console.log('Hello');
+      contactPanel.classList.toggle('open');
+    }
+
+
+
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+    
+    homeLink.addEventListener('click', homeOpen);
+    aboutLink.addEventListener('click', aboutOpen);
+    serviceLink.addEventListener('click', serviceOpen);
+    clientsLink.addEventListener('click', clientsOpen);
+    whyLink.addEventListener('click', whyOpen);
+    contactLink.addEventListener('click', contactOpen);
+
+  </script>
+
+</body>
+</html>
