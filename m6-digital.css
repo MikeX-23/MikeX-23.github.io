@@ -218,11 +218,11 @@ html {
 .logo {
   font-family: 'Lobster';
   font-size:60px;
-  width:150%;
+  width:137%;
   text-align:center;
   position:relative;
   bottom:70px;
-  background:pink;
+  background:red;
   height:80px;
   
 }
