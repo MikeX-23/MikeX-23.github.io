@@ -212,3 +212,20 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size:180%;
  }
+ @media screen and (min-width:1580px)
+      and (max-width:2400px) 
+{
+.logo {
+  font-family: 'Lobster';
+  font-size:60px;
+  width:137%;
+  text-align:center;
+  position:relative;
+  bottom:70px;
+  background:red;
+  height:80px;
+  
+}
+ 
+
+}
