@@ -212,7 +212,7 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size:180%;
  }
- @media screen and (min-width:1580px)
+ @media screen and (min-width:1600px)
       and (max-width:2400px) 
 {
 .logo {
@@ -222,7 +222,7 @@ html {
   text-align:center;
   position:relative;
   bottom:70px;
-  background:red;
+  background:pink;
   height:80px;
   
 }
