@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="Harvey.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<title>Harvey Saints</title>
+</head>
+<body>
+<section class="landing">
+	<div class="landing-inner">
+		<img src="/img/Harvey.png">
+		<p class="slogan">We are a clothing store that offers a finer aesthetic.</p>
+		<h1 class="comingsoon animated fadeIn">Coming Soon</h1>
+		<div class="countdown animated fadeIn"></div>
+	</div>
+</section>
+
+
+
+
+<script>
+const countdown = document.querySelector('.countdown');
+
+// Set a launch date 
+const launchDate = new Date ('June 1, 2018 13:00:00').getTime();
+
+// Update every second 
+const interval = setInterval(function() {
+	// Get today's date and time
+const now = new Date().getTime();
+// distance from now to the launch date
+const distance = launchDate - now;
+// time calculations
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours =  Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const mins =  Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds=  Math.floor((distance % (1000 * 60)) / 1000);
+
+// Display result 
+countdown.innerHTML = `<div>${days}<span>Days</span></div>
+<div>${hours}<span>Hours</span></div>
+<div>${mins}<span>Minutes</span></div>
+<div>${seconds}<span>Seconds</span></div>`;
+
+//if launch date passed
+if(distance < 0) {
+	// Stop Countdown
+	clearInterval(interval);
+	// Style and Output text
+	countdown.style.color = '#17a2b8';
+	countdown.innnerHTML = 'Launched!';
+}
+
+}, 1000);
+
+
+</script>
+</body>
+</html>
