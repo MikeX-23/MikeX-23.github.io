@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strix</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="strix.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="strix.html"><span class="logo text-center">STRIX</span></a>
+       </div> <!-- End of NavBar Header -->
+        
+        <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="strix.html" class="current">Home</a></li>
+          <li><a href="strix-about.html">About</a></li>
+          <li><a href="strix-features.html">Features</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="strix-contact.html">Contact Us</a></li>
+        </ul>
+      </div><!-- End of Navbar Collapse -->
+      </div><!-- End of Container -->
+    </nav><!-- End of Nav -->
+
+    <div id="home">
+      <img src="img/desktop.png" class="banner">
+    </div>
+
+    <div class="container-fluid text-center about">
+    <h1>The New Standard For Your Business</h1>
+    
+    <h3 id="strix">Strix is the best software platform for building your internet business. We help generate billions of dollars every year for fast forward thinking businesses around the world.</h3>
+    <br><br>
+    <button type="button" class="btn btn-success btn-lg" id="strix-button"><a href="register.html">Create Account</a></button>
+    <div class="row">
+      <div class="col-md-6">
+      <br><br><br>
+        <hr>
+        <h2>Toolkit For Your Internet Business</h2>
+        <p>Thousands of the world's most innovative technology companies aim to scale faster and more efficiently. Strix builds and offers the most powerful and flexible tools for internet commerce. This includes subscription services, on-demand marketplaces, or an e-commerce store. We will give you the functionality that will help you create the best product for your users.</p>
+        <hr>
+      </div>
+      <div class="col-md-6">
+        <br><br><br>
+        <img src="img/code.png">
+      </div>
+
+    </div><!-- End of Row -->
+    <br>
+    </div> <!-- End of Container -->
+
+    <div class="demand">
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-6">
+        <br>
+          <h3>Always Improving</h3>
+          <p>Strix is an always-improving toolchain that gains new features every month. Building on Strix means you get early access to the latest technologies.</p>
+        </div>
+        <div class="col-md-6">
+        <br>
+          <h3>Global Scale</h3>
+          <p>We help power 100,000+ businesses in 25 countries and across nearly every industry. Headquartered in Ottawa, Strix has 9 global offices and hundreds of people working to help transform how modern businesses are built and run.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<div id="connect" class="container-fluid text-center">
+<div class="row">
+  <div class="col-md-6">
+        <div class="card">
+          <h3 class="card-title">Transparency</h3>
+          <p class="black-text">Personal interaction and honesty is something we emphasize alot. We want to work with you and help you succeeed.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <h3 class="card-title">Diversity</h3>
+            <p class="black-text">We are committed to building an actively inclusive work environment. Strix is a great home for everyone regardless of race, age, ethnicty, or gender.</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="ready">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <h2>Ready to get started?</h2>
+          <h2>Create an account now!</h2>
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="btn btn-success btn-lg" id="ready-button"><a href="register.html">Create Account</a></button> 
+        </div>
+    </div>
+    </div>
+
+  </div>
+
+
+  <footer class="container-fluid text-center" id="footer-a">
+    <div class="row">
+    <hr>
+      <div id="links">
+        <a href="strix.html" class="link">Home</a>
+        <a href="strix-about.html" class="link">About</a>
+        <a href="strix-features.html" class="link">Features</a>
+        <a href="register.html" class="link">Register</a>
+        <a href="strix-contact.html" class="link">Contact Us</a>
+      </div>
+      <div class="social">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div>
+        &copy; Strix 2017 All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

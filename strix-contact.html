@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strix</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="strix.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="strix.html"><span class="logo text-center">STRIX</span></a>
+       </div> <!-- End of NavBar Header -->
+        
+        <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="strix.html">Home</a></li>
+          <li><a href="strix-about.html">About</a></li>
+          <li><a href="strix-features.html">Features</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="strix-contact.html" class="current">Contact Us</a></li>
+        </ul>
+      </div><!-- End of Navbar Collapse -->
+      </div><!-- End of Container -->
+    </nav><!-- End of Nav -->
+
+    <div class="first-half">
+      <h2 class="text-center">Contact Us</h2><br>
+      <h3 class="text-center">Let us know how we can assist you.</h3>
+      <div class="container">
+        <div class="col-md-4">
+        <div class="card">
+          <h3 class="card-title-2">Help & Support</h3>
+          <p class="black-text">We're here to help with any technical questions you may have.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card">
+          <h3 class="card-title-2">Sales</h3>
+          <p class="black-text">We'd love to talk about how we can collaborate and help your business reach the bottom line. </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="card">
+          <h3 class="card-title-2">Media Resources</h3>
+          <p class="black-text">We can refer you to more of our company info and media resources.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center">Please email info@strix.com for all queries.</p>
+    </div>
+
+  <div class="ready">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+          <h2>Ready to get started?</h2>
+          <h2>Create an account now!</h2>
+        </div>
+        <div class="col-md-6">
+          <button type="button" class="btn btn-success btn-lg" id="ready-button"><a href="register.html">Create Account</a></button> 
+        </div>
+    </div>
+    </div>
+    </div>
+
+  <footer class="container-fluid text-center" id="footer-a">
+    <div class="row">
+    <hr>
+      <div id="links">
+        <a href="strix.html" class="link">Home</a>
+        <a href="strix-about.html" class="link">About</a>
+        <a href="strix-features.html" class="link">Features</a>
+        <a href="register.html" class="link">Register</a>
+        <a href="strix-contact.html" class="link">Contact Us</a>
+      </div>
+      <div class="social">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div>
+        &copy; Strix 2017 All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
