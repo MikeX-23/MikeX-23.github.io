@@ -130,6 +130,18 @@ button a:hover {
 	background:white;
 }
 
+.icon-spacing {
+	position:relative;
+	left:200px;
+	padding-bottom:40px;
+
+}
+
+.center-title {
+	position:relative;
+	left:110px;
+}
+
 .improve-title {
 	color:#1fb8eb;
 	font-weight:bold;
@@ -230,6 +242,13 @@ button a:hover {
 	opacity:1;
 }
 
+.cog {
+	position:relative;
+	right:60px;
+	bottom:20px;
+
+}
+
 #location {
 	padding-bottom:100px;
 	background: #ff9800;
@@ -249,6 +268,9 @@ button a:hover {
 	font-size:150%;
 }
 
+.globe {
+	padding-top:40px;
+}
 
 
 .click-container {
@@ -367,12 +389,7 @@ textarea::placeholder {
 }
 
 
-/*background: #ff9800 = yellow 
-	background:#00b2ca = light blue
-	background: #297fb8 = dark blue
-	background:#673ab7 = purple
-	background: #d5d5d5 = 
-*/
+
 
 
 /* Footer */
@@ -441,24 +458,8 @@ textarea::placeholder {
 		font-size:200%;
 	}
 
+	.first-half {
+		height:1400px;
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
