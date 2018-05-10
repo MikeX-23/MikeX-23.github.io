@@ -413,7 +413,7 @@ font-size:1.3rem;
 
 #cart {
 	position:absolute;
-	right:1%;
+	right:4%;
 	font-size:1.5rem;
 	padding-right:30px;
 	cursor:pointer;
@@ -431,7 +431,7 @@ font-size:1.3rem;
 
 .product-info {
 	position:absolute;
-	right:-41%;
+	right:-38%;
 	background:black;
 	color:white;
 	width:734px;
