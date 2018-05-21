@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="vinest.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<title>Vinest</title>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+	<div class="header-container">
+		<div class="nav-area">
+			<a href="vinest.html"><span id="logo">Vinest</span></a>
+			<a href="vinest.html"><span id="products">Featured Products</span>
+			<a href="vinest-lr.html"><span id="living" class="current">Living Room</span></a>
+			<a href="vinest-top.html"><span id="top">Top Products</span></a>
+			<span id="font">
+				<div class="search-box">
+					<input type="text" class="input" placeholder="Search...">
+					<div class="btn">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</div>
+				</div>
+					<a href="vinest-cart.html"><i class="fa fa-shopping-cart" id="cart"></i></a>
+			</span>
+		</div>
+	</div>
+</header>
+
+<!-- End of Header Section -->
+
+<!-- Start of Content Section -->
+<div class="living-container">
+	<div class="living-bg">
+		<div class="one-half">
+			<h1 id="living-title">Living Room</h1>
+			<h2 id="living-story">We All Have A Story To Tell</h2>
+			<p id="living-para">The living room is the heart of your home. It serves double duty, as your favorite place to relax and as the space where you entertain. At Vinest, we aim to offer modern, functional pieces that will incorporate seamlessly into your life.</p>
+		</div>
+
+		<div class="one-half">
+			<img src="kanji.png">
+		</div>
+	</div>
+</div>
+
+<div class="living-container">
+	<div class="summer-container">
+		<div id="summer-area">
+			<h3>Summer <br><span id="summer-sale">Sale</span> 50% OFF</h3>		
+		</div>
+		<div class="summer-items">
+			<div id="summer-item">
+				<img src="axel.png" id="summer-item-1"/>
+				<h4 class="item-title">Axel</h4>
+				<h5 class="item-type">Media Unit</h5>
+				<h4 class="item-price"><span class="cross">$449</span> <i>$225</i></h4>
+				<h4 class="item-view">View Details </h4>
+				<span class="summer-btn"><a href="vinest-cart.html">Add to Cart</a></span>
+				<p class="item-details animated fadeIn">As part of the ultra-modern Axel Collection, this media console is a stand out that shows off its clean, slim, sophisticated lines and mix of materials. The architectural, airy steel frame and clear glass floats above it all to enhance the design and add style to any living space. Display your flat screen and components, while you hide accessories in three spacious drawers that glide and provide concealed storage.</p>
+			</div>
+			<div id="summer-item">
+				<img src="romeo.png" id="summer-item-2"/>
+				<h4 class="item-title-2">Romeo</h4>
+				<h5 class="item-type-2">Armchair</h5>
+				<h4 class="item-price-2"><span class="cross">$399</span> <i>$200</i></h4>
+				<h4 class="item-view-2">View Details</h4>
+				<span class="summer-btn2"><a href="vinest-cart.html">Add to Cart</a></span>
+				<p class="item-details-2 animated fadeIn">This tufted Chesterfield-inspired armchair features generous padding on both its seat and back cushion, making it a pleasure to sink into. With a definite retro personality, its soft upholstery has a vintage feel while its square frame recalls classic club chairs. Stained solid wood feet and subtle piping confirm that a love story between Romeo and your home is awaiting.</p>
+			</div>
+			<div id="summer-item">
+				<img src="cetta.png" id="summer-item-3"/>
+				<h4 class="item-title-3">Cetta</h4>
+				<h5 class="item-type-3">Media Unit</h5>
+				<h4 class="item-price-3"><span class="cross">$459</span> <i>$230</i></h4>
+				<h4 class="item-view-3">View Details</h4>
+				<span class="summer-btn3"><a href="vinest-cart.html">Add to Cart</a></span>
+				<p class="item-details-3 animated fadeIn">You’ll want to watch TV for hours when it’s sitting on Cetta! With its mix of solid acacia wood and metal, this media unit brings a touch of the modern industrial style to your space. A magnetic door hides a roomy storage compartment and two open shelves with holes at the back promise that wires will be out of sight! Pair it with the other items to add even more warmth to your home.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+<script>
+$(".btn").click(function(){
+	$(".input").toggleClass("active");
+	$(this).toggleClass('animate');
+});
+
+var item1 = document.querySelector('.item-view');
+var item2 = document.querySelector('.item-view-2');
+var item3 = document.querySelector('.item-view-3');
+var detail1 = document.querySelector('.item-details');
+var detail2 = document.querySelector('.item-details-2');
+
+var detail3 = document.querySelector('.item-details-3');
+
+
+item1.addEventListener('click', function() {
+	detail1.style.display="block";
+});
+
+item2.addEventListener('click', function() {
+	detail2.style.display="block";
+});
+
+item3.addEventListener('click', function() {
+	detail3.style.display="block";
+});
+
+</script>
+</body>
+</html>
