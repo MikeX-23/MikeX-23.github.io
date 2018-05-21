@@ -1059,7 +1059,6 @@ color:white;
 	position:absolute;
 	top:6%;
 	left:38%;
-	border-bottom: 2px solid black;
 	padding:5px;
 	font-size:0.9rem;
 }
@@ -1186,7 +1185,7 @@ color:white;
 
 #cart {
 	position:absolute;
-	right:7%;
+	right:5%;
 	font-size:1.5rem;
 	padding-right:30px;
 	cursor:pointer;
