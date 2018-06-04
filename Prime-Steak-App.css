@@ -357,9 +357,7 @@ strong {
 	animation-duration:1s;
 }
 
-.modal-container {
-	position:relative;
-}
+
 
 .modal-title {
 	font-family:'Rozha One', serif;
@@ -1119,6 +1117,18 @@ textarea {
 @media screen and (min-width:1580px)
 			and (max-width:2400px) 
 	{
+.modal-content {
+	background:#f4f4f4;
+	margin:2% auto;
+	padding:20px;
+	width:90%;
+	height:65%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name:modalopen;
+	animation-duration:1s;
+}
+
 
 	.loginbox {
 	width:320px;
@@ -1130,6 +1140,7 @@ textarea {
 	left:620px;
 	box-sizing:border-box;
 	padding: 20px 30px;
+	margin: 10px 160px;
 
 }
 .footer-text-f {
