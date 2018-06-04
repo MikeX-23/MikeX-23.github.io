@@ -318,16 +318,89 @@ strong {
 .menu-back {
 	height:100px;
 	background:#fafafa;
-	text-align:center;
 	padding-bottom:40px;
 }
 
 .menu {
+	position:relative;
+	top:40%;
+	left:45%;
 	font-family:'Rozha One', serif;;
 	color:black;
 	text-decoration:underline;
-	display:none;
+	cursor:pointer;
+	
 }
+
+/* Modal */
+
+.modal {
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background:#f4f4f4;
+	margin:2% auto;
+	padding:20px;
+	width:90%;
+	height:85%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name:modalopen;
+	animation-duration:1s;
+}
+
+.modal-container {
+	position:relative;
+}
+
+.modal-title {
+	font-family:'Rozha One', serif;
+	font-size:1.5rem;
+	text-transform:uppercase;
+}
+
+.modal-title:after {
+	content:'';
+	display:block;
+	border: 1px solid;
+	width:90%;
+	color:black;
+}
+
+.food {
+	width:25%;
+	display:inline-block;
+	font-family: 'PT Sans', sans-serif;
+	font-size:1.3rem;
+	color:black;
+}
+
+#closeBtn {
+	color:#ccc;
+	float:right;
+	font-size:1.9rem;
+	cursor:pointer;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+@keyframes modalopen {
+	from{opacity:0}
+	to {opacity:1}
+}
+
 
 /* Quote Generator */
 
@@ -1054,7 +1127,7 @@ textarea {
 	color:#fff;
 	position:relative;
 	bottom:40px;
-	left:785px;
+	left:620px;
 	box-sizing:border-box;
 	padding: 20px 30px;
 

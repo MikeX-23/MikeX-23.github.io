@@ -450,6 +450,27 @@ color:white;
 	width:300px;
 	height:300px;
 }
+#summer-item-4{
+	position:absolute;
+	top:150%;
+	left:25%;
+	width:300px;
+	height:300px;
+}
+#summer-item-5{
+	position:absolute;
+	top:150%;
+	left:52%;
+	width:300px;
+	height:300px;
+}
+#summer-item-6 {
+	position:absolute;
+	top:150%;
+	left:76%;
+	width:300px;
+	height:300px;
+}
 
 .item-title {
 	position:absolute;
@@ -644,6 +665,225 @@ color:white;
 	font-size:0.8rem;
 	padding-bottom:60px;
 	display:none;
+}
+
+
+.item-title-4 {
+	position:absolute;
+	top:215%;
+	left:35%;
+	font-size:1.2rem;
+	text-transform:uppercase;
+
+}
+
+.item-type-4{
+	position:absolute;
+	top:223%;
+	left:35%;
+	font-size:0.8rem;
+	color:grey;
+}
+
+.item-price-4{
+	position:absolute;
+	top:235%;
+	left:35%;
+}
+
+.cross {
+	text-decoration:line-through;
+}
+
+.item-view-4 {
+	position:absolute;
+	top:245%;
+	left:30%;
+	background:black;
+	color:white;
+	padding:10px;
+	cursor:pointer;
+}
+
+.summer-btn4 {
+	position:absolute;
+	top:250%;
+	left:39%;
+	background:black;
+	color:white;
+	width:120px;
+	padding:10px;
+	margin-left:5px;
+	text-decoration:none;
+	margin-left:10px;
+}
+
+.summer-btn4 a {
+	text-decoration:none;
+	color:white;
+}
+
+.item-details-4 {
+	position:absolute;
+	top:260%;
+	left:30%;
+	width:15%;
+	font-size:0.8rem;
+	padding-bottom:60px;
+	display:none;
+}
+.item-title-5{
+	position:absolute;
+	top:215%;
+	left:60%;
+	font-size:1.2rem;
+	text-transform:uppercase;
+
+}
+
+.item-type-5{
+	position:absolute;
+	top:223%;
+	left:60%;
+	font-size:0.8rem;
+	color:grey;
+}
+
+.item-price-5{
+	position:absolute;
+	top:235%;
+	left:60%;
+}
+
+.cross {
+	text-decoration:line-through;
+}
+
+.item-view-5 {
+	position:absolute;
+	top:245%;
+	left:55%;
+	background:black;
+	color:white;
+	padding:10px;
+	cursor:pointer;
+}
+
+.summer-btn5 {
+	position:absolute;
+	top:250%;
+	left:64%;
+	background:black;
+	color:white;
+	width:120px;
+	padding:10px;
+	margin-left:5px;
+	text-decoration:none;
+	margin-left:10px;
+}
+
+.summer-btn5 a {
+	text-decoration:none;
+	color:white;
+}
+
+.item-details-5 {
+	position:absolute;
+	top:260%;
+	left:55%;
+	width:15%;
+	font-size:0.8rem;
+	padding-bottom:60px;
+	display:none;
+}
+.item-title-6 {
+	position:absolute;
+	top:210%;
+	left:84%;
+	font-size:1.2rem;
+	text-transform:uppercase;
+
+}
+
+.item-type-6{
+	position:absolute;
+	top:218%;
+	left:84%;
+	font-size:0.8rem;
+	color:grey;
+}
+
+.item-price-6{
+	position:absolute;
+	top:235%;
+	left:84%;
+}
+
+.cross {
+	text-decoration:line-through;
+}
+
+.item-view-6{
+	position:absolute;
+	top:245%;
+	left:80%;
+	background:black;
+	color:white;
+	padding:10px;
+	cursor:pointer;
+}
+
+.summer-btn6{
+	position:absolute;
+	top:250%;
+	left:89%;
+	background:black;
+	color:white;
+	width:120px;
+	padding:10px;
+	margin-left:5px;
+	text-decoration:none;
+	margin-left:10px;
+}
+
+.summer-btn6 a {
+	text-decoration:none;
+	color:white;
+}
+
+.item-details-6 {
+	position:absolute;
+	top:260%;
+	left:80%;
+	width:15%;
+	font-size:0.8rem;
+	padding-bottom:60px;
+	display:none;
+}
+
+.living-bg2 {
+	position:absolute;
+	top:335%;
+	width:99%;
+	height:500px;
+	background: url('https://static.structube.com/media/wysiwyg/category/living-room/2017_December/livingroom-sectionalsofa.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	
+}
+
+.living-bg2 h1 {
+	padding-top:15%;
+	text-align:center;
+	color:white;
+}
+
+.living-bg2 h3 {
+	font-weight:800;
+	text-align:center;
+	color:white;
+	padding-right:120px;
 }
 
 /* Top Product Section */

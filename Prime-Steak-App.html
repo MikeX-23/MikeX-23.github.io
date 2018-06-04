@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Prime Steak</title>
+	<title>restaurant-app</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="Prime-Steak-App.css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
@@ -113,7 +113,38 @@
 			</div>
 			
 </section>
-<div class="menu-back"><a href="#" class="menu">View Full Menu</a></div>
+<div class="menu-back" id="modalBtn"><a class="menu">View Full Menu</a></div>
+
+<div id="simpleModal" class="modal">
+	<div class="modal-content">
+		<span id="closeBtn">&times;</span>
+		<div class="modal-container">
+			<h2 class="modal-title">Appetizers</h2>
+			<div>
+				<span class="food">Soup of the Day </span>$6.99<span class="food">Green Salad</span>$8.99<span class="food">Fried Chicken and Honey</span>$11.99
+				<br>
+			</div>
+				<span class="food">Salmon Tartare </span>$13.99<span class="food">Beef Tartare</span>$13.99<span class="food">Fried Calamari Bowl</span>$14.99
+		</div>
+		<br><br>
+		<h2 class="modal-title">Main Course</h2>
+			<div>
+				<span class="food">Duck Confit Poutine </span>$17.99<span class="food">Mac 'N' Cheese</span>$17.99<span class="food">Halloumi</span>$17.99
+				<br><br>
+			</div>
+				<span class="food">Beef Bavette and Fries</span>$28.99<span class="food">Bacon and Cheddar Burger</span>$19.99<span class="food">Crab Cakes</span>$14.99
+				<br><br><br>
+				<h2 class="modal-title">Deserts</h2>
+			<div>
+				<span class="food">Cheesecake </span>$7.99<span class="food">Apple Crumble</span>$7.99<span class="food">Chocolate Torte</span>$7.99
+				<br><br>
+				<h2 class="modal-title">Teas</h2>
+			<div>
+				<span class="food">Jasmine Green Tea</span>$4.75<span class="food">Earl Grey</span>$4.75<span class="food">Green Tea</span>$4.75
+			</div>
+		</div>
+	</div>
+</div>
 
 <section id="RandomQuote">
 	<div class="container">
@@ -286,6 +317,45 @@
 		</div>
 	</div>
 </footer>
+
+<script>
+	// Get Modal Button
+	var modal = document.getElementById('simpleModal');
+
+	// Get open modal Button
+	var modalBtn = document.getElementById('modalBtn');
+	//Get close button
+	var closeBtn = document.getElementById('closeBtn');
+
+	//listen for open click
+	modalBtn.addEventListener('click', openModal);
+
+	//listen for close click
+	closeBtn.addEventListener('click', closeModal);
+
+	//listen for outside click
+	window.addEventListener('click', clickOutside);
+
+
+	//function to open modal
+	function openModal() {
+		modal.style.display="block";
+	}
+
+	//function to close modal
+	function closeModal() {
+		modal.style.display="none";
+	}
+
+	//function to close modal
+	function clickOutside(e) {
+		if(e.target == modal)
+		modal.style.display="none";
+	}
+
+
+
+</script>
 
 </body>
 </html>
