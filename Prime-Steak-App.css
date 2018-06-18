@@ -1201,15 +1201,14 @@ textarea {
 	.login-form {
 	max-width:320px;
 	height:700px;
-	background:#000;
-	color:#fff;
 	position:relative;
-	bottom:40px;
-	left:620px;
+	bottom:10px;
+	left:4%;
 	padding: 20px 30px;
 	margin: 10px 160px;
 
 }
+
 .footer-text-f {
 	position:relative;
 	top:-50px;
