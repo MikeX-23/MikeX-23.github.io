@@ -384,11 +384,12 @@ strong {
 #closeBtn {
 	color:#ccc;
 	float:right;
-	font-size:1.9rem;
-	cursor:pointer;
+	font-size:2rem;
+
+
 }
 
-.closeBtn:hover, .closeBtn:focus {
+#closeBtn:hover {
 	color:#000;
 	text-decoration:none;
 	cursor:pointer;
@@ -466,11 +467,7 @@ span {
 
 }
 
-/*.box-2 {
-	width:200px;
-	background:#fff;
-	padding:20px;
-} */
+
 
 .box-img-2 {
 	width:100%;
@@ -571,7 +568,7 @@ span {
 	
 }
 
-/* Contact */
+/* Login Section */
 
 #Contact-sec {
 	padding:80px 0;
@@ -583,72 +580,139 @@ span {
 	background-repeat:repeat;
 }
 
-.loginbox {
-	width:320px;
-	height:450px;
-	background:#000;
-	color:#fff;
+
+.login-wrapper {
 	position:relative;
 	bottom:40px;
 	left:520px;
-	box-sizing:border-box;
-	padding: 20px 30px;
+	padding:0 20px;
+}
+
+.login-form {
+	width:100%;
+	max-width:320px;
+	background:#fff;
+	height:700px;
+	border-top-right-radius:50%;
+	border-top-left-radius:50%;
+	box-shadow: 0 2px 5px 0 rgba(225, 225, 225, 0.16), 0 2px 10px 0 rgba(225, 225, 225, 0.12);
+}
+
+.login-wrapper .title-section{
+	color:black;
+	height:45%;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
 
 }
 
-.c {
-	margin:0;
-	padding:0;
-	font-weight:bold;
+
+ .login-image {
+ 	position:absolute;
+ 	top:0%;
+ 	left:0%;
+	width:350px;
+	height:350px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	border-radius:50%;
+}
+
+.login-form .login-section {
+	margin-top:40px;
+	width:100%;
+	height:55%;
+	padding:30px 30px;
+}
+
+.login-form .login-section .input-fields {
 	padding-bottom:10px;
-	padding-top:10px;
-	font-size:18px;
 }
 
-.loginbox input {
-	width:100%;
+.login-form .login-section .input-fields .input {
+	width:50%;
+	border: 1px solid #BDBDBD;
+	padding: 10px 30px;
+	border-radius:3px;
+	font-size:1rem;
 }
 
-.loginbox input[type="text"], input[type="email"] {
-	border:none;
-	border-bottom: 1px solid #fff;
-	background:transparent;
-	outline:none;
-	height:40px;
+
+
+.login-form .login-section .input-fields .fa {
+	position:relative;
+	color: #212121;
+	font-size: 0.80rem;
+	top:0;
+	left:8%;
+}
+
+.log-btn {
+	width:65%;
+	background: #f5c000;
+	padding:10px;
+	margin-top:5px;
+	text-align:center;
+	text-transform:capitalize;
+	letter-spacing: 2px;
 	color:#fff;
-	font-size:16px;
-}
-
-textarea {
-	width:100%;
-	background:transparent;
-	border:none;
-	outline:none;
-	border-bottom:1px solid grey;
-	color:#fff;
-	font-size:18px;
-
-}
-
-
-
-.loginbox input[type="submit"] {
-	border:none;
-	outline:none;
-	height:40px;
-	background:#fb2525;
-	color:#fff;
-	border-radius:20px;
-	margin-top:20px;
-	font-size:18px;
-
-}
-
-.loginbox input[type="submit"]:hover {
+	border-radius: 3px;
 	cursor:pointer;
-	background:#ffc107;
-	color:#000;
+
 }
+
+.log-btn:hover {
+	background:black;
+	color:white;
+}
+
+.social-media {
+	text-align:center;
+	color:#212121;
+	margin-top:20px;
+	margin-right:70px;
+}
+
+
+.login-items .fa {
+	width:33px;
+	height:28px;
+	border-radius:3px;
+	font-size:1rem;
+	line-height:28px;
+	cursor:pointer;
+}
+
+.login-items .fa-facebook {
+	background:#3B5998;
+	color:white;
+}
+
+.login-items .fa-twitter{
+	background:#00aced;
+	color:white;
+}
+
+.login-items .fa-google{
+	background:#dd4b39;
+	color:white;
+}
+
+.sign-up {
+	margin-right:80px;
+	margin-top:10px;
+	text-align:center;
+	text-transform:capitalize;
+	font-size:1.125rem;	
+}
+
+.sign-up a {
+	color:#f57c00;
+	text-decoration:none;
+}
+
+/*  End of Login Section */
 
 .contact-2 {
 	width:92%;
@@ -971,6 +1035,7 @@ ul {
 	font-size:85%;
 }
 
+/* Login */
 
 .loginbox {
 	width:220px;
@@ -1047,6 +1112,8 @@ textarea {
 	top:160px;
 }
 
+/* End of Login */
+
 #comp-mobile {
 	position:relative;
 	top:580px;
@@ -1117,7 +1184,8 @@ textarea {
 @media screen and (min-width:1580px)
 			and (max-width:2400px) 
 	{
-.modal-content {
+
+	.modal-content {
 	background:#f4f4f4;
 	margin:2% auto;
 	padding:20px;
@@ -1130,15 +1198,14 @@ textarea {
 }
 
 
-	.loginbox {
-	width:320px;
-	height:450px;
+	.login-form {
+	max-width:320px;
+	height:700px;
 	background:#000;
 	color:#fff;
 	position:relative;
 	bottom:40px;
 	left:620px;
-	box-sizing:border-box;
 	padding: 20px 30px;
 	margin: 10px 160px;
 
