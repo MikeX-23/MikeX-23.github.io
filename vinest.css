@@ -1021,24 +1021,20 @@ color:white;
 	color:orange;
 }
 
-.living-bg3 {
+
+
+.living-img {
 	position:absolute;
 	top:345%;
 	left:60%;
-	width:39%;
-	height:320px;
-
-}
-
-.living-img {
-	width:540px;
+	width:40%;
 	height:320px;
 }
 
 .countdown {
 	display:flex;
 	position:relative;
-	bottom: 100%;
+	bottom:100%;
 	left:51%;
 	font-size:0.90rem;
 }
