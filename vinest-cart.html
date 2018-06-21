@@ -23,6 +23,34 @@
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</div>
 				</div>
+
+				<div id="modalBtn">
+					<i class="fa fa-user" id="user"></i>
+					</div>
+
+					<div id="simpleModal" class="modal">
+					<div class="modal-content">
+						<span id="closeBtn">&times;</span>
+						<h2>Don't Wait, Sign Up Now!</h2>
+						<div class="modal-input-fields">
+						<i class="fa fa-user"></i>
+						<input type="text" class="modal-input" placeholder="Email">
+						</div>
+					<div class="modal-input-fields">
+						<i class="fa fa-unlock-alt"></i>
+						<input type="password" class="modal-input" placeholder="Password">
+						</div>
+						<div class="modal-sign">
+							<div class="modal-sign-up">
+								Sign up
+							</div>
+							<div class="modal-log-in">
+								Login
+							</div>
+						</div>
+
+					</div>
+				</div>
 					<a href="vinest-cart.html"><i class="fa fa-shopping-cart" id="cart"></i></a>
 				</span>
 			</div>
@@ -58,6 +86,40 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
 <script>
+
+// Get Modal Button
+	var modal = document.getElementById('simpleModal');
+
+	// Get open modal Button
+	var modalBtn = document.getElementById('modalBtn');
+	//Get close button
+	var closeBtn = document.getElementById('closeBtn');
+	//listen for open click
+	modalBtn.addEventListener('click', openModal);
+
+	//listen for close click
+	closeBtn.addEventListener('click', closeModal);
+
+	//listen for outside click
+	window.addEventListener('click', clickOutside);
+
+
+	//function to open modal
+	function openModal() {
+		modal.style.display="block";
+	}
+
+	//function to close modal
+	function closeModal() {
+		modal.style.display="none";
+	}
+
+	//function to close modal
+	function clickOutside(e) {
+		if(e.target == modal)
+		modal.style.display="none";
+	}
+
 $(".btn").click(function(){
 	$(".input").toggleClass("active");
 	$(this).toggleClass('animate');

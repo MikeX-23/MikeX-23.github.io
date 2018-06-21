@@ -117,12 +117,131 @@ body {
 
 #cart {
 	position:absolute;
-	top:3%;
-	right:7%;
+	top:4%;
+	right:4%;
 	font-size:1.5rem;
 	padding-right:30px;
 	cursor:pointer;
 }
+
+#user {
+	position:absolute;
+	top:4%;
+	right:10%;
+	font-size:1.5rem;
+	cursor:pointer;
+}
+
+/* Login Form */
+
+.modal {
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background:#f4f4f4;
+	margin:3% 5% 2% 33%;
+	padding:20px;
+	width:45%;
+	height:55%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name:modalopen;
+	animation-duration:1s;
+}
+
+.modal-content h2 {
+	margin:6% 6%;
+}
+
+.modal-input-fields {
+	padding-bottom:10px;
+	margin-left:4%;
+}
+
+ .modal-input {
+	width:50%;
+	border: 1px solid #BDBDBD;
+	padding: 10px 30px;
+	border-radius:3px;
+	font-size:1rem;
+}
+
+.modal-sign {
+	display:flex;
+}
+
+.modal-sign-up {
+	text-align:center;
+	text-transform:uppercase;
+	width:20%;
+	padding:10px;
+	background:black;
+	color:white;
+	margin-left:6%;
+	margin-top:2%;
+	cursor:pointer;
+}
+
+.modal-sign-up:hover {
+	color:black;
+	background:lightgrey;
+}
+
+.modal-log-in {
+	text-align:center;
+	text-transform:uppercase;
+	width:20%;
+	padding:10px;
+	background:white;
+	color:black;
+	margin-left:2%;
+	margin-top:2%;
+	cursor:pointer;
+}
+
+
+.modal-log-in:hover {
+	color:white;
+	background:grey;
+}
+
+
+
+.modal-input-fields .fa {
+	position:relative;
+	color: #212121;
+	font-size: 0.90rem;
+	top:0;
+	left:5%;
+}
+
+#closeBtn {
+	color:#ccc;
+	float:right;
+	font-size:2rem;
+
+
+}
+
+#closeBtn:hover {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+@keyframes modalopen {
+	from{opacity:0}
+	to {opacity:1}
+}
+
 
 .nav-area a {
 	text-decoration:none;
@@ -520,6 +639,7 @@ color:white;
 	margin-left:5px;
 	text-decoration:none;
 	margin-left:10px;
+	text-align:center;
 }
 .summer-btn a {
 	text-decoration:none;
@@ -584,6 +704,7 @@ color:white;
 	margin-left:5px;
 	text-decoration:none;
 	margin-left:10px;
+	text-align:center;
 }
 
 .summer-btn2 a {
@@ -650,6 +771,7 @@ color:white;
 	margin-left:5px;
 	text-decoration:none;
 	margin-left:10px;
+	text-align:center;
 }
 
 .summer-btn3 a {
@@ -716,6 +838,7 @@ color:white;
 	margin-left:5px;
 	text-decoration:none;
 	margin-left:10px;
+	text-align:center;
 }
 
 .summer-btn4 a {
@@ -780,6 +903,7 @@ color:white;
 	margin-left:5px;
 	text-decoration:none;
 	margin-left:10px;
+	text-align:center;
 }
 
 .summer-btn5 a {
@@ -844,6 +968,7 @@ color:white;
 	margin-left:5px;
 	text-decoration:none;
 	margin-left:10px;
+	text-align:center;
 }
 
 .summer-btn6 a {
@@ -861,29 +986,77 @@ color:white;
 	display:none;
 }
 
+
+
 .living-bg2 {
 	position:absolute;
-	top:335%;
-	width:99%;
-	height:500px;
-	background: url('https://static.structube.com/media/wysiwyg/category/living-room/2017_December/livingroom-sectionalsofa.jpg');
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-	
+	top:345%;
+	width:60%;
+	background:rgba(211, 211, 211, 0.18);
+	height:320px;
+	padding: 0 70px;
 }
-
-.living-bg2 h1 {
-	padding-top:15%;
-	text-align:center;
-	color:white;
+ 
+.falcon {
+	position:relative;
+	bottom:15%;
+	right:10%;
+	width:400px;
+	height:300px;
 }
 
 .living-bg2 h3 {
-	font-weight:800;
-	text-align:center;
+	position:relative;
+	bottom:80%;
+	left:55%;
+}
+.living-bg2 h4 {
+	position:relative;
+	bottom:90%;
+	left:57%;
+	font-size:2rem;
+}
+
+#sixty {
+	color:orange;
+}
+
+.living-bg3 {
+	position:absolute;
+	top:345%;
+	left:60%;
+	width:39%;
+	height:320px;
+
+}
+
+.living-img {
+	width:540px;
+	height:320px;
+}
+
+.countdown {
+	display:flex;
+	position:relative;
+	bottom: 100%;
+	left:51%;
+	font-size:0.90rem;
+}
+.countdown div {
+	padding:15px;
+	border: 1px solid white;
+	border-radius:10px;
+	margin:5px;
+	background:black;
 	color:white;
-	padding-right:120px;
+}
+
+.countdown div:first-child {
+	background:orange;
+}
+
+.countdown span {
+	display:block;
 }
 
 /* Top Product Section */
@@ -1451,9 +1624,18 @@ color:white;
 }
 
 
+#user {
+	position:absolute;
+	top:4%;
+	right:4%;
+	font-size:1.5rem;
+	cursor:pointer;
+}
+
+
 #cart {
 	position:absolute;
-	right:5%;
+	right:10%;
 	font-size:1.5rem;
 	padding-right:30px;
 	cursor:pointer;
