@@ -1605,22 +1605,59 @@ color:white;
 	transition: transform .15s ease;
 }
 
-.living-bg2 {
-	position:absolute;
-	top:230%;
-	width:99%;
-	height:500px;
-	background: url('https://static.structube.com/media/wysiwyg/category/living-room/2017_December/livingroom-sectionalsofa.jpg');
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-	
+.living-img {
+	position:relative;
+	top:-370%;
+	left:-13%;
+	width:850px;
+	height:320px;
 }
 
-.living-bg2 h1 {
-	padding-top:10%;
-	text-align:center;
-	color:white;
+
+
+.living-bg2 {
+	position:absolute;
+	top:345%;
+	width:60%;
+	background:rgba(211, 211, 211, 0.18);
+	height:320px;
+	padding: 0 70px;
+}
+ 
+.falcon {
+	position:relative;
+	bottom:15%;
+	right:10%;
+	width:400px;
+	height:300px;
+}
+
+.living-bg2 h3 {
+	position:relative;
+	bottom:80%;
+	left:35%;
+}
+.living-bg2 h4 {
+	position:relative;
+	bottom:85%;
+	left:36%;
+	font-size:2rem;
+}
+
+.falcon {
+	position:relative;
+	bottom:50%;
+	right:4%;
+	width:600px;
+	height:400px;
+}
+
+.countdown {
+	display:flex;
+	position:relative;
+	bottom: 88%;
+	left:33%;
+	font-size:0.90rem;
 }
 
 
@@ -1639,6 +1676,18 @@ color:white;
 	font-size:1.5rem;
 	padding-right:30px;
 	cursor:pointer;
+}
+
+.modal-content {
+	background:#f4f4f4;
+	margin:3% 5% 2% 33%;
+	padding:20px;
+	width:35%;
+	height:40%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name:modalopen;
+	animation-duration:1s;
 }
 
 .product-section {
