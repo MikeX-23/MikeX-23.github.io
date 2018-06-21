@@ -1605,9 +1605,17 @@ color:white;
 	transition: transform .15s ease;
 }
 
+.one-half img {
+	position:absolute;
+	top:8%;
+	right:15%;
+	width:650px;
+	height:600px;
+}
+
 .living-img {
 	position:relative;
-	top:-370%;
+	top:-339%;
 	left:-13%;
 	width:850px;
 	height:320px;
@@ -1617,18 +1625,18 @@ color:white;
 
 .living-bg2 {
 	position:absolute;
-	top:345%;
+	top:232%;
 	width:60%;
 	background:rgba(211, 211, 211, 0.18);
-	height:320px;
+	height:316px;
 	padding: 0 70px;
 }
  
 .falcon {
 	position:relative;
 	bottom:15%;
-	right:10%;
-	width:400px;
+	right:7%;
+	width:500px;
 	height:300px;
 }
 
@@ -1663,8 +1671,8 @@ color:white;
 
 #user {
 	position:absolute;
-	top:4%;
-	right:4%;
+	top:3%;
+	right:7%;
 	font-size:1.5rem;
 	cursor:pointer;
 }
@@ -1672,7 +1680,8 @@ color:white;
 
 #cart {
 	position:absolute;
-	right:10%;
+	top:3%;
+	right:3%;
 	font-size:1.5rem;
 	padding-right:30px;
 	cursor:pointer;
