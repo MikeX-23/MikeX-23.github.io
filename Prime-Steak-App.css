@@ -174,7 +174,8 @@ strong {
 	text-decoration:none;
 	color:black;
 	text-transform:uppercase;
-	transition: all .5s ease-in-out
+	transition: all .5s ease-in-out;
+	visibility:hidden;
 
 }
 
