@@ -657,12 +657,96 @@ footer.second {
 	max-width: 1200px;
 }
 
-#slider .slide {
+#slider .slide1 {
+	list-style:none;
+	position:absolute;
+	width:85%;
+	height:100%;
+	animation:fade1 8s infinite;
+}
+
+#slider .slide2 {
 	float:left;
 	list-style:none;
-	width: 1100px;
-	height:500px;
+	position:absolute;
+	width:85%;
+	height:100%;
+	animation:fade2 8s infinite;
 }
+#slider .slide3 {
+	float:left;
+	list-style:none;
+	position:absolute;
+	width:85%;
+	height:100%;
+	animation:fade3 8s infinite;
+}
+#slider .slide4 {
+	float:left;
+	list-style:none;
+	position:absolute;
+	width:85%;
+	height:100%;
+	animation:fade4 8s infinite;
+}
+
+@keyframes fade1 {
+	0% {
+		opacity:1;
+	}
+	25% {
+		opacity:0;
+	}
+	75% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+@keyframes fade2 {
+	0% {
+		opacity:0;
+	}
+	25% {
+		opacity:1;
+	}
+	75% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+@keyframes fade3 {
+	0% {
+		opacity:0;
+	}
+	25% {
+		opacity:1;
+	}
+	75% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+@keyframes fade4 {
+	0% {
+		opacity:0;
+	}
+	25% {
+		opacity:0;
+	}
+	75% {
+		opacity:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
 
 @media screen and (max-width:768px){
 	header {

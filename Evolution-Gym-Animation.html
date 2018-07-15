@@ -8,43 +8,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script>
-$(document).ready(function(){
-
-	var width = 1100;
-    var animationSpeed = 1300;
-    var pause = 4000;
-    var currentSlide = 1;
-
-    
-    var $slider = $('#slider');
-    var $slideContainer = $('.slides', $slider);
-    var $slides = $('.slide', $slider);
-
-    var interval;
-
-    function startSlider() {
-        interval = setInterval(function() {
-            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-                if (++currentSlide === $slides.length) {
-                    currentSlide = 1;
-                    $slideContainer.css('margin-left', 0);
-                }
-            });
-        }, pause);
-    }
-    function pauseSlider() {
-        clearInterval(interval);
-    }
-
-    $slideContainer
-        .on('mouseenter', pauseSlider)
-        .on('mouseleave', startSlider);
-
-    startSlider();
-
-});
-</script>
 </head>
 <body>
 	<header>
@@ -65,10 +28,10 @@ $(document).ready(function(){
 	</header>
 		<section id="slider">
 			<ul class="slides">
-				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/inside-gym.png"/></li>
-				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/push-ups.png"/></li>
-				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/chest-fly.png"/></li>
-				<li class="slide"><img src="http://www.w3newbie.com/wp-content/uploads/training.png"/></li>
+				<li class="slide1"><img src="http://www.w3newbie.com/wp-content/uploads/inside-gym.png"/></li>
+				<li class="slide2"><img src="http://www.w3newbie.com/wp-content/uploads/push-ups.png"/></li>
+				<li class="slide3"><img src="http://www.w3newbie.com/wp-content/uploads/chest-fly.png"/></li>
+				<li class="slide4"><img src="http://www.w3newbie.com/wp-content/uploads/training.png"/></li>
 			</ul>
 		</section>
 		<div class="clearfix"></div>
