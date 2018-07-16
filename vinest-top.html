@@ -61,51 +61,73 @@
 <!-- Start of Content Section -->
 <div class="living-container">
 	<div class="top-bg">
-		<div id="top-title">Top Products of 2018</div>
+		<div class="top-title">Top Products of 2018</div>
 		<a href="vinest-cart.html"><div class="card1">
 			<h3 id="flow">Flow</h3>
 			<h4 id="sofa">sofa-bed</h4>
-			<img src="img/flow.png" id="sofa-img"/>
+			<img src="flow.png" id="sofa-img"/>
 			<h5 id="sofa-price"><i>$399</i></h5>
 		</div></a>
 		<a href="vinest-cart.html"><div class="card2">
 			<h3 id="versailles">Versailles</h3>
 			<h4 id="bed">King Size Bed</h4>
-			<img src="img/versailles.png" id="bed-img"/>
+			<img src="versailles.png" id="bed-img"/>
 			<h5 id="bed-price"><i>$879</i></h5>
 		</div></a>
 		<a href="vinest-cart.html"><div class="card3">
 			<h3 id="karina">Karina</h3>
 			<h4 id="lamp">Table Lamp</h4>
-			<img src="img/karina.png" id="lamp-img"/>
+			<img src="karina.png" id="lamp-img"/>
 			<h5 id="lamp-price"><i>$39</i></h5>
 		</div></a>
 		<a href="vinest-cart.html"><div class="card4">
 			<h3 id="elios">Elios</h3>
 			<h4 id="mirror">Steel Floor Mirror</h4>
-			<img src="img/elios.png" id="mirror-img"/>
+			<img src="elios.png" id="mirror-img"/>
 			<h5 id="mirror-price"><i>$169</i></h5>
 		</div></a>
 		<a href="vinest-cart.html"><div class="card5">
 			<h3 id="alto">Alto</h3>
 			<h4 id="bookcase">2-door storage bookcase</h4>
-			<img src="img/bookcase.png" id="book-img"/>
+			<img src="bookcase.png" id="book-img"/>
 			<h5 id="bookcase-price"><i>$169</i></h5>
 		</div></a>
 		<a href="vinest-cart.html"><div class="card6">
 			<h3 id="berto">Berto</h3>
 			<h4 id="sofa-bed">sectional sofa-bed with storage</h4>
-			<img src="img/berto.png" id="sofabed-img"/>
+			<img src="berto.png" id="sofabed-img"/>
 			<h5 id="sofabed-price"><i>$999</i></h5>
 		</div></a>
 	</div>
 </div>
 
+<div class="top-title">Top Furniture Styles</div>
 
+<div class="clearout"></div> 
+
+<ul id="flexiselDemo3">
+	<li><img src="http://decoholic.org/wp-content/uploads/2012/09/living_room_furniture_fendi11.jpg" /></li>
+	<li><img src="http://decoholic.org/wp-content/uploads/2012/09/edra_design_armchairs11.jpg" /></li>
+	<li><img src="http://decoholic.org/wp-content/uploads/2012/09/living_room_furniture_poliform11.jpg" /></li>
+	<li><img src="http://decoholic.org/wp-content/uploads/2012/09/living_room_furniture_Christopher_Guy111.jpg" /></li>
+	<li><img src="http://decoholic.org/wp-content/uploads/2012/09/living_room_furniture_baker11.jpg" /></li>
+</ul>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexisel/2.2.2/js/jquery.flexisel.js"></script>
+
 
 <script>
+
+$("#flexiselDemo3").flexisel({
+        visibleItems: 3,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }        
+    });
 
 // Get Modal Button
 	var modal = document.getElementById('simpleModal');
