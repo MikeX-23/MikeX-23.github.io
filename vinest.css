@@ -1817,6 +1817,11 @@ display:none;
 	padding:15px 40px;
 	transition:transform 1s ease;
 }
+
+#flexiselDemo3 img {
+	width:600px;
+	height:400px;
+}
 .moveback{
 	transform: translateX(-700px);
 }
