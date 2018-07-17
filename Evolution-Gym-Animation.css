@@ -75,11 +75,26 @@ nav ul li a {
 	color: #FFF;
 	font-weight:bold;
 }
-a:hover {
-	text-decoration:underline;
+nav ul li a::after {
+	content: '';
+	display: block;
+	width:0;
+	height:2px;
+	background:#fff;
+	transition: width .3s;
 }
-.current {
-	text-decoration:underline;
+
+nav ul li a:hover::after {
+	width:100%;
+	
+}
+
+.current::after {
+	content: '';
+	display: block;
+	width:100%;
+	height:2px;
+	background:#fff;
 }
 #inner-wrapper {
 	max-width:1200px;
@@ -1141,7 +1156,7 @@ textarea::placeholder {
 	width: 29%;
 	float: left;
 	margin: 4% 2% 2% 0%;
-}
+}\|
 
 	#training-header h1 {
 	position:absolute;
