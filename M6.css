@@ -459,3 +459,168 @@ header {
 }
 
 /* End of Footer */
+@media screen and (max-width:768px){
+
+}
+
+@media screen and (min-width:1580px)
+			and (max-width:2400px) 
+	{
+header {
+	height:15vh;
+
+}
+
+.mission {
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	font-size:3.5rem;
+	text-align:center;
+	position:relative;
+	opacity:1;
+	top:-600px;
+}
+
+#about h1 {
+	text-align:center;
+	font-family:'Exo 2', sans-serif;
+	font-size:3rem;
+	color:red;
+}
+
+#about p {
+	font-family:'Exo 2', sans-serif;
+	color:white;
+	position:absolute;
+	left:18%;
+	width:60%;
+	font-size:1.5rem;
+	line-height:1.5;
+}
+
+#build-btn {
+	position:absolute;
+	left:7%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#plan-btn {
+	position:absolute;
+	left:30%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#attract-btn {
+	position:absolute;
+	left:54%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#manage-btn {
+	position:absolute;
+	left:77%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#services {
+	position:relative;
+	height:130vh;
+	margin-top:10px;
+	padding-top:60px;
+	top:200px;
+	background:white;
+	font-family: 'Exo 2', sans-serif;
+	width:100.6%;
+	
+}
+
+#promo {
+	position:relative;
+	width:99%;
+	top:130px;
+	padding:20px;
+	color:red;
+	background:#212121;
+	text-align:center;
+	font-family:'Exo 2', sans-serif;
+}
+
+#clients {
+	position:relative;
+	top:140px;
+	width:100.6%;
+	
+}
+
+#contact {
+	position:relative;
+	background:url(https://source.unsplash.com/h7EIo10-yrQ) no-repeat;
+	background-size:cover;
+	height:70vh;
+	top:115px;
+	width:100.6%;
+	opacity:0.6;
+}
+
+.contact-info h1 {
+
+	position:absolute;
+	top:-400px;
+	left:47%;
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	font-size:3rem;
+
+}
+
+#email {
+	position:relative;
+	top:-240px;
+	left:3%;
+	text-align:center;
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	font-size:1.3rem;
+
+}
+
+#footer {
+	position:relative;
+	top:-43px;
+	background:#212121;
+	text-align:center;
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	padding:15px;
+}
+	
+
+}

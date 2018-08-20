@@ -546,7 +546,24 @@ color:#ff2d26;
 
 }
 
+@media screen and (min-width:1580px)
+			and (max-width:2400px) 
+	{
 
+#location {
+	padding-bottom:140px;
+	padding-top:80px;
+	background: #ff9800;
+}
+
+.ready {
+	background:#297fb8;
+	padding-bottom:140px;
+	padding-top:80px;
+}
+
+
+}
 
 
 
