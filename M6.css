@@ -575,7 +575,7 @@ header {
 
 #clients {
 	position:relative;
-	top:140px;
+	top:120px;
 	width:100.6%;
 	
 }
@@ -585,7 +585,7 @@ header {
 	background:url(https://source.unsplash.com/h7EIo10-yrQ) no-repeat;
 	background-size:cover;
 	height:70vh;
-	top:115px;
+	top:1070px;
 	width:100.6%;
 	opacity:0.6;
 }
@@ -593,8 +593,8 @@ header {
 .contact-info h1 {
 
 	position:absolute;
-	top:-400px;
-	left:47%;
+	top:530px;
+	left:46%;
 	color:white;
 	font-family:'Exo 2', sans-serif;
 	font-size:3rem;
@@ -603,7 +603,7 @@ header {
 
 #email {
 	position:relative;
-	top:-240px;
+	top:420px;
 	left:3%;
 	text-align:center;
 	color:white;
@@ -614,7 +614,8 @@ header {
 
 #footer {
 	position:relative;
-	top:-43px;
+	top:650px;
+	height:15vh;
 	background:#212121;
 	text-align:center;
 	color:white;
