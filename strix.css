@@ -10,10 +10,12 @@ body {
 	background: #297fb8;
 	border-bottom: 1px solid #5398c6;
 	padding: 1% 0;
+
 }
 .navbar-brand {
 	min-height:55px;
 	padding: 0 15px 5px;
+
 }
 
 .logo {
@@ -280,6 +282,16 @@ button a:hover {
 
 /* Features */ 
 
+.about h2 {
+	padding-top:40px;
+}
+
+
+
+.about img {
+	padding-top:60px;
+}
+
 #payment {
 	padding-top:100px;
 	height:600px;
@@ -288,9 +300,24 @@ button a:hover {
 .demand {
 	background: #ff9800;
 }
+.demand img {
+	padding-top:60px;
+}
+
+.demand h2 {
+	padding-top:40px;
+}
 
 #mobile-e {
 	background:#673ab7;
+}
+
+#mobile-e img {
+	padding-top:60px;
+}
+
+#mobile-e h2 {
+	padding-top:40px;
 }
 
 /* Register */
@@ -423,6 +450,8 @@ button a:hover {
 .error #next-btn {
 color:#ff2d26;
 }
+
+
 
 
 

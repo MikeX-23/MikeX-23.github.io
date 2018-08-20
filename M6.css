@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Exo+2:800|Kanit:800|Nosifer');
+
+body {
+	background: #212121;
+
+}
+
+/* Header */
+
+header {
+	height:25vh;
+
+}
+
+.logo {
+	position:absolute;
+	top:10px;
+	left:-35px;
+	color:white;
+	font-size:4rem;
+	font-family:'Nosifer', cursive;
+	margin:0.5rem 3rem;
+	float:left;
+	letter-spacing:-10px;
+}
+
+.spinner {
+	width:150px;
+	height:150px;
+	background:red;
+	border-radius:50%;
+	position:relative;
+	margin:20px;
+	display:inline-block;
+}
+
+.spinner:before, .spinner:after {
+	content:'';
+	display:block;
+	width:150px;
+	height:150px;
+	border-radius:50%;
+}
+
+.spinner:after {
+	position:absolute;
+	top:-4px;
+	left:-4px;
+	border:4px solid transparent;
+	border-top-color:white;
+	border-bottom-color:white;
+	animation: spinny 2s linear infinite;
+}
+
+@keyframes spinny {
+0% {
+	transform:rotate(0deg);
+}
+100% {
+	transform:rotate(360deg);
+}
+
+}
+
+.nav {
+	font-family:'Exo 2', sans-serif;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:500;
+	float:right;
+	
+}
+
+.nav * {
+	box-sizing:border-box;
+	transition: all 0.35s ease;
+
+}
+
+.nav li {
+	display:inline-block;
+	list-style: outside none none;
+	margin: 3em .4em;
+	padding:0;
+
+}
+
+.nav a {
+	padding: .5em 0.8em;
+	color:rgba(255, 255, 255, 0.5);
+	position:relative;
+	text-decoration:none;
+	font-size:20px;
+}
+
+.nav a:hover {
+	color:white;
+}
+
+.nav a:before, .nav a:after {
+	height: 14px;
+	width: 14px;
+	position:absolute;
+	content:'';
+	transition: all 0.35s ease;
+	opacity:0;
+
+}
+
+.nav a:before {
+	right:0;
+	top:0;
+	border-right: 3px solid red;
+	border-top:3px solid red;
+	transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+	left:0;
+	bottom:0;
+	border-left: 3px solid red;
+	border-bottom: 3px solid red;
+	transform: translate(100%, -50%);
+
+
+}
+
+.nav a:hover:before, a:hover:after {
+	transform: translate(0%, 0%);
+	opacity:1;
+
+}
+
+.header-bg {
+	margin-top:2%;
+	height:80vh;
+	background: url(https://source.unsplash.com/MoH4SkuqUm4) no-repeat;
+	background-size:cover;
+	opacity:0.3;
+	
+}
+
+.mission {
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	font-size:2.5rem;
+	text-align:center;
+	position:relative;
+	opacity:1;
+	top:-350px;
+}
+
+#grow {
+	font-size:3.5rem;
+	font-family: 'Kanit', sans-serif;
+	text-transform:uppercase;
+	color:red;
+	text-decoration:underline;
+	letter-spacing:5px;
+}
+
+/* About */
+
+#about {
+	position:relative;
+	top:-90px;
+	text-align:center;
+}
+
+#about h1 {
+	text-align:center;
+	font-family:'Exo 2', sans-serif;
+	font-size:2.5rem;
+	color:red;
+}
+
+#about p {
+	font-family:'Exo 2', sans-serif;
+	color:white;
+	position:absolute;
+	left:18%;
+	width:60%;
+	font-size:1.2rem;
+	line-height:1.5;
+}
+
+/* End of About */
+
+/* Services */
+
+#services {
+	position:relative;
+	height:200vh;
+	margin-top:10px;
+	padding-top:60px;
+	top:200px;
+	background:white;
+	font-family: 'Exo 2', sans-serif;
+	width:100.6%;
+	
+}
+
+#services h1 {
+	text-align:center;
+	font-size:3rem;
+	color:red;
+}
+
+.one-fourth {
+	float:left;
+	width:20%;
+	margin:30px;
+}
+
+.icon {
+	text-align:center;
+	font-size:3rem;
+	color:red;
+}
+
+#support {
+	text-align:center;
+}
+
+#support p {
+	line-height:1.5;
+	display:none;
+}
+
+
+
+#build-btn {
+	position:absolute;
+	left:8%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#build-btn:hover {
+	color:white;
+	background:red;
+}
+
+.build-title {
+	color:red;
+	letter-spacing:7px;
+	text-decoration:underline;
+	display:none;
+}
+
+
+
+#strat {
+	text-align:center;
+}
+
+#strat p {
+	line-height:1.5;
+	display:none;
+}
+
+#plan-btn {
+	position:absolute;
+	left:32%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#plan-btn:hover {
+	color:white;
+	background:red;
+}
+
+.plan-title {
+	color:red;
+	letter-spacing:7px;
+	text-decoration:underline;
+	display:none;
+}
+
+#market {
+	text-align:center;
+}
+
+#market p {
+	line-height:1.5;
+	display:none;
+}
+
+#attract-btn {
+	position:absolute;
+	left:57%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#attract-btn:hover {
+	color:white;
+	background:red;
+}
+
+.attract-title {
+	color:red;
+	letter-spacing:7px;
+	text-decoration:underline;
+	display:none;
+}
+
+#hosting {
+	text-align:center;
+}
+
+#hosting p {
+	line-height:1.5;
+	display:none;
+}
+
+#manage-btn {
+	position:absolute;
+	left:82%;
+	font-size:1.5rem;
+	text-align:center;
+	color:red;
+	border:2px solid red;
+	width:7%;
+	cursor:pointer;
+	padding:10px;
+	transition: all 0.35s ease;
+}
+
+#manage-btn:hover {
+	color:white;
+	background:red;
+}
+
+.manage-title {
+	color:red;
+	letter-spacing:7px;
+	text-decoration:underline;
+	display:none;
+}
+
+.hidden-container {
+	padding-top:150px;
+}
+
+
+
+
+/* End of Services */
+
+/* Promo */
+
+#promo {
+	position:relative;
+	width:97.6%;
+	top:130px;
+	padding:20px;
+	color:red;
+	background:#212121;
+	text-align:center;
+	font-family:'Exo 2', sans-serif;
+}
+
+/* End of Promo */
+
+/* Clients*/
+
+#clients {
+	position:relative;
+	top:120px;
+	width:100.6%;
+	
+}
+
+#clients h1 {
+	position:absolute;
+	left:45%;
+	color:red;
+	font-family:'Exo 2', sans-serif;
+	font-size:2.5rem;
+}
+
+#clients img {
+	float:left;
+	width:25%;
+}
+
+/* End of Clients*/
+
+/* Contact */
+
+
+
+#contact {
+	position:relative;
+	background:url(https://source.unsplash.com/h7EIo10-yrQ) no-repeat;
+	background-size:cover;
+	height:70vh;
+	top:790px;
+	width:100.6%;
+	opacity:0.6;
+}
+
+.contact-info {
+	position:relative;
+}
+.contact-info h1 {
+
+	position:absolute;
+	top:220%;
+	left:43%;
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	font-size:2.5rem;
+
+}
+
+#email {
+	position:relative;
+	top:420px;
+	text-align:center;
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	font-size:1.1rem;
+
+}
+ 
+
+/* End of Contact */
+
+/* Footer */
+#footer {
+	position:relative;
+	top:540px;
+	background:#212121;
+	text-align:center;
+	color:white;
+	font-family:'Exo 2', sans-serif;
+	padding:15px;
+}
+
+/* End of Footer */
