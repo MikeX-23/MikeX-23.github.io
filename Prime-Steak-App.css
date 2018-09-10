@@ -661,6 +661,12 @@ span {
 	border-radius: 3px;
 	cursor:pointer;
 
+
+}
+
+input[type="submit"] {
+	position:relative;
+	left:10px;
 }
 
 .log-btn:hover {
@@ -1060,6 +1066,13 @@ ul {
 	font-size:18px;
 }
 
+.login-wrapper {
+	position:relative;
+	top:560px;
+	left:-4px;
+	padding:0 20px;
+}
+
 .loginbox input {
 	width:100%;
 }
@@ -1118,25 +1131,27 @@ textarea {
 #comp-mobile {
 	position:relative;
 	top:580px;
-	right:40px;
+	
 }
 
 #flav-mobile {
 	position:relative;
 	top:580px;
-	right:40px;
+	right:10px;
 }
 
 
 .address {
 	width:100%;
 	position:relative;
-	right:10px;
+	right:-10px;
+	font-size:16px;
 }
 .number {
 	width:100%;
 	position:relative;
-	right:20px;
+	right:-20px;
+	bottom:20px;
 }
 
 #number-mobile {
@@ -1144,7 +1159,7 @@ textarea {
 	height:120px;
 	background:white;
 	font-family: 'PT Sans', sans-serif;
-	font-size:1.5rem;
+	font-size:0.6rem;
 	line-height:1.8;
 }
 .second {
@@ -1153,6 +1168,11 @@ textarea {
 	margin-top:80px;
 }
 
+.logo-f {
+	text-align:center;
+	margin-left:215px;
+	padding-top:20px;
+}
 
 
 .footer-text-f {
@@ -1209,7 +1229,6 @@ textarea {
 	margin: 10px 160px;
 
 }
-
 .footer-text-f {
 	position:relative;
 	top:-50px;

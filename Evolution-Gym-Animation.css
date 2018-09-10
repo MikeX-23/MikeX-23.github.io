@@ -75,6 +75,7 @@ nav ul li a {
 	color: #FFF;
 	font-weight:bold;
 }
+
 nav ul li a::after {
 	content: '';
 	display: block;
@@ -88,6 +89,7 @@ nav ul li a:hover::after {
 	width:100%;
 	
 }
+
 
 .current::after {
 	content: '';
@@ -818,6 +820,39 @@ footer.second {
 	width:100%;
 	margin:0;
 }
+
+#slider .slide1 {
+	list-style:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	animation:fade1 8s infinite;
+}
+
+#slider .slide2 {
+	float:left;
+	list-style:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	animation:fade2 8s infinite;
+}
+#slider .slide3 {
+	float:left;
+	list-style:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	animation:fade3 8s infinite;
+}
+#slider .slide4 {
+	float:left;
+	list-style:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	animation:fade4 8s infinite;
+}
  h3 {
 	 font-size:170%;
  	text-align:center;
@@ -907,7 +942,7 @@ footer.second {
 	.one-half-4 p {
 		text-align:center;
 		position:relative;
-		right:80px;
+		right:95px;
 
 	}
 
@@ -923,6 +958,7 @@ footer.second {
 	#training-closer p {
 		text-align:center;
 		position: relative;
+		left:11%;
 	}
 
 	#workout-pic-1 {
@@ -984,7 +1020,7 @@ footer.second {
 	input[type="email"] {
 	padding:4px;
 	height:40px;
-	width:17%;
+	width:40%;
 }
 
 	#button1 {
@@ -998,7 +1034,33 @@ footer.second {
 		margin: 0 auto;
 	}
 
-	/* Find a Gym */
+	.modal {
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	height:100%;
+	width:104%;
+	overflow:auto;
+	background-color:rgba(0,0,0,0.5);
+	font-size:8px;
+}
+
+
+.modal-content {
+	background-color:#f4f4f4;
+	margin:15% auto;
+	padding:20px;
+	width:71%;
+	height:350px;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0, 0.2),
+	0 7px 20px 0 rgba(0,0,0, 0.17);
+	animation-name:modalopen;
+	animation-duration:1s;
+}
+
+
 
 	.one-third-b {
 		width:100%;
@@ -1006,6 +1068,10 @@ footer.second {
 
 	/* contact */
 
+	select {
+		padding:10px;
+		margin-left:80px;
+	}
 
 .loginbox {
 	width:220px;
@@ -1146,7 +1212,8 @@ textarea::placeholder {
 @media screen and (min-width:1580px)
 			and (max-width:2400px) 
 {
-	.slides img {
+
+.slides img {
 	width:100%;
 	margin: 0 800px 0 0;
 	max-width: 1200px;
@@ -1156,8 +1223,7 @@ textarea::placeholder {
 	width: 29%;
 	float: left;
 	margin: 4% 2% 2% 0%;
-}\|
-
+}
 	#training-header h1 {
 	position:absolute;
 	top:20%;

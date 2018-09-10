@@ -62,6 +62,15 @@ header {
 
 }
 
+.mobile-nav-toggle {
+	display:none;
+}
+
+.line {
+	display:none;
+}
+
+
 .nav {
 	font-family:'Exo 2', sans-serif;
 	text-align:center;
@@ -460,8 +469,334 @@ header {
 
 /* End of Footer */
 @media screen and (max-width:768px){
+	.logo {
+	position: absolute;
+    top: 6px;
+    left: -40px;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Nosifer', cursive;
+    margin: 0.5rem 3rem;
+    float: left;
+    letter-spacing: -10px;
+}
+	.spinner {
+	width: 90px;
+    height: 90px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px;
+    display: inline-block;
+	}
+
+	.spinner:before, .spinner:after {
+    /* content: ''; */
+    display: none;
+}
+
+.nav {
+	display:none;
+}
+
+.mobile-nav {
+	display:none;
+}
+
+.mobile-nav-toggle {
+	position:absolute;
+	width:50px;
+	height:50px;
+	/*background:pink;*/
+	right:20px;
+	display:flex;
+	align-items:center;
+	cursor:pointer;
+	top:40px;
+	right:80px;
+}
+.line, .line:before, .line:after {
+	content:"";	
+	display:block;
+	height:4px;
+	width:100%;
+	background:white;
+	position:relative;
+	transition:all 0.3s ease-in-out;
+}
+
+
+.line:before {
+	top:15px;
+}
+.line:after {
+	bottom:17px;
+}
+
+.mobile-nav-toggle:hover .nav2 {
+	display:block;
+}
+
+.nav2 li {
+	list-style: none;
+	padding:5px;
+}
+
+.nav2 li a {
+	text-decoration:none;
+	color:white;
+	text-transform:capitalize;
+}
+
+.mobile-nav-toggle .nav2, .mobile-nav-toggle .nav2:active {
+	z-index:1000;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:#212121;
+	padding:20px;
+	border:1px solid #fff;
+	border-radius: 4px 0 4px 4px;
+}
+
+.mission {
+	color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    top: -350px;
+}
+
+#grow {
+    font-size: 2.9rem;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    color: red;
+    text-decoration: underline;
+    letter-spacing: 5px;
 
 }
+
+#services {
+    position: relative;
+    height: 560vh;
+    margin-top: 10px;
+    padding-top: 60px;
+    top: 200px;
+    background: white;
+    font-family: 'Exo 2', sans-serif;
+    width: 100.6%;
+}
+
+#about h1 {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.9rem;
+    color: red;
+}
+
+#about p {
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+    position: absolute;
+    left: 11%;
+    width: 80%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.one-fourth {
+    float: left;
+    width: 100%;
+    margin: 30px;
+}
+
+
+
+#services h1 {
+    text-align: center;
+    font-size: 1.9rem;
+    color: red;
+}
+
+.fa {
+    display: inline-block;
+    position: relative;
+    right: 30px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#support {
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+
+#build-btn {
+    position: absolute;
+    left: 25%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    width: 40%;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.35s ease;
+}
+
+#support p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: none;
+}
+
+#strat {
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+
+#plan-btn {
+    position: absolute;
+    left: 25%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    width: 40%;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.35s ease;
+}
+
+#strat p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: none;
+}
+
+#market {
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+
+#attract-btn {
+    position: absolute;
+    left: 25%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    width: 40%;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.35s ease;
+}
+
+#market p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: none;
+}
+
+#hosting {
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+
+#manage-btn {
+    position: absolute;
+    left: 25%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    width: 40%;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.35s ease;
+}
+
+#hosting p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: none;
+}
+
+#promo {
+    position: relative;
+    width: 97.6%;
+    top: 130px;
+    padding: 20px;
+    color: red;
+    background: #212121;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.7rem;
+}
+
+#clients {
+    position: relative;
+    top: 150px;
+    width: 100.6%;
+}
+
+#clients h1 {
+    position: absolute;
+    left: 45%;
+    color: red;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 0.8rem;
+}
+
+.contact-info h1 {
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.9rem;
+}
+
+#email {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1rem;
+}
+
+#contact {
+    position: relative;
+    background: url(https://source.unsplash.com/h7EIo10-yrQ) no-repeat;
+    background-size: cover;
+    height: 70vh;
+    top: 303px;
+    width: 100.6%;
+    opacity: 0.6;
+}
+
+#footer {
+    position: relative;
+    top: 240px;
+    background: #212121;
+    text-align: center;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 15px;
+    font-size: 0.7rem;
+}
+
 
 @media screen and (min-width:1580px)
 			and (max-width:2400px) 
